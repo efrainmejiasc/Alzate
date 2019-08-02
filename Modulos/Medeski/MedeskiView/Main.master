@@ -1,0 +1,51 @@
+<%@ Master Language="C#" MasterPageFile="~/Root.master" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="MedeskiView.MainMaster" %>
+
+<%-- DXCOMMENT: Page Main.master is a master page that contains central area layout --%>
+<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">   
+    
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li id="titlemenubox" class="sidebar-brand"> <a href="#">Menu</a></li>
+        </ul>
+		<div id="#sidebar">
+					
+			<!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <ul class="list-unstyled components" runat="server">
+                    <li class="treeview">
+                        <a href="../Default.aspx">
+                            <i class="la la-dashboard"></i><span>Dashboard</span>
+                        </a>
+                    </li>
+                    <asp:PlaceHolder ID="menuSidebar" runat="server" />                    
+				</ul>						
+			</nav>
+		</div>
+	</div>
+
+
+    <%--
+    <dx:ASPxPanel ID="LeftPane" runat="server" FixedPosition="WindowLeft" ClientInstanceName="LeftPane" CssClass="leftPane" Collapsible="true" RightToLeft="False">
+            <PanelCollection>
+                
+                <dx:PanelContent runat="server" SupportsDisabledAttribute="True">
+                        <div class="leftPanel">
+                             DXCOMMENT: Configure the left panel's ASPxNavBar 
+                            <dx:ASPxNavBar ID="ASPxNavBar1" runat="server" AutoCollapse="True" EnableAnimation="True" Width="100%" OnItemClick="ASPxNavBar1_ItemClick">
+                                <Border BorderWidth="0px" />
+                                <Paddings Padding="0px" />    
+                            </dx:ASPxNavBar>
+                           
+                        </div>
+                </dx:PanelContent>
+            </PanelCollection>
+    </dx:ASPxPanel>
+    --%>
+
+    <div class="contentPane">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />            
+    <hr />
+    <footer>
+        <p>© 2018 - Desarrollado por Transformación Digital Fanalca</p>
+    </footer>
+</asp:Content>

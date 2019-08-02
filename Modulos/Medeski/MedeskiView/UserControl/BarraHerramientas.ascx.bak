@@ -1,0 +1,25 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="BarraHerramientas.ascx.cs" Inherits="MedeskiView.UserControl.BarraHerramientas" %>
+<%@ Register Assembly="DevExpress.Web.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<div>
+    <dx:ASPxMenu ID="toolbar" ClientInstanceName="toolbar" runat="server" ShowAsToolbar="true" ShowPopOutImages="true"
+        AllowSelectItem="True" OnItemClick="ASPxMenu1_ItemClick" AutoPostBack="false">
+        <Items>
+            <dx:MenuItem Name="Nuevo" ToolTip="Nuevo">
+                <Image IconID="actions_additem_16x16office2013"></Image>
+            </dx:MenuItem>
+            <dx:MenuItem Name="Editar" ToolTip="Editar">
+                <Image IconID="actions_edit_16x16devav"></Image>
+            </dx:MenuItem>
+            <dx:MenuItem Name="Guardar" ToolTip="Guardar">
+                <Image IconID="actions_save_16x16devav"></Image>
+            </dx:MenuItem>
+            <dx:MenuItem Name="Eliminar" ToolTip="Eliminar">
+                <Image IconID="actions_delete_16x16devav"></Image>
+            </dx:MenuItem>
+            <dx:MenuItem Name="Exportar" ToolTip="Exportar">
+                <Image IconID="export_exporttocsv_16x16office2013"></Image>
+            </dx:MenuItem>
+        </Items>
+    </dx:ASPxMenu>
+</div>

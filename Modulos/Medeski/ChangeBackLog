@@ -1,0 +1,7 @@
+06/10/2019 -ha.development.org
+
+- Upgrade .Net Framework Target 4.5 / +4.5.2
+- Upgrade Devexpress Component Library 15.2 / +19.1
+- Clean Old Solution Build to new local developer target
+- Install Entity Framework on VS to mange Connection to DB Objects
+- Change database project connection string

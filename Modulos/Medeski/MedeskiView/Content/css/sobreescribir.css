@@ -1,0 +1,69 @@
+:root {
+    --color-primario: #2C5183;
+    --color-secundario: rgba(186, 0, 13, 0.24);
+    --color-terciario: rgba(186, 0, 13, 0.08);
+    --color-letra: white;
+}
+
+img.dxgvCommandColumnItem:hover {
+    background-color: transparent;
+}
+
+.dxgvFocusedRow_DevEx {
+    background: var(--color-secundario);
+}
+
+.dxgvDataRow_DevEx img {
+    background: var(--color-primario);
+    border-radius: 0px;
+}
+
+.dxnbLite_Moderno .dxnb-itemSelected,
+.dxnbLite_Moderno .dxnb-largeSelected {
+    background-color: var(--color-secundario);
+}
+
+.dxnbLite_Moderno .dxnb-itemHover,
+.dxnbLite_Moderno .dxnb-itemHover a,
+.dxnbLite_Moderno .dxnb-largeHover,
+.dxnbLite_Moderno .dxnb-largeHover a {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.dxpnlControl_Moderno .dxpnl-btnHover {
+    background-color: var(--color-primario);
+}
+
+.dxpLite_DevEx .dxp-current {
+    background-color: var(--color-terciario);
+}
+
+.dxpc-closeBtn .dxpc-closeBtnHover {
+    background-color: var(--color-primario);
+}
+
+.dxpcLite_Moderno .dxpc-closeBtnHover,
+.dxdpLite_Moderno .dxpc-closeBtnHover,
+.dxpcLite_Moderno .dxpc-pinBtnHover,
+.dxdpLite_Moderno .dxpc-pinBtnHover,
+.dxpcLite_Moderno .dxpc-refreshBtnHover,
+.dxdpLite_Moderno .dxpc-refreshBtnHover,
+.dxpcLite_Moderno .dxpc-collapseBtnHover,
+.dxdpLite_Moderno .dxpc-collapseBtnHover,
+.dxpcLite_Moderno .dxpc-maximizeBtnHover,
+.dxdpLite_Moderno .dxpc-maximizeBtnHover {
+    border: 1px solid var(--color-primario);
+    background: var(--color-primario);
+}
+
+.dxichSys
+{
+    margin: -1px;
+}
+
+.dxeBase_MetropolisBlue .dxichCellSys,
+.dxeBase_MetropolisBlue.dxichCellSys
+{
+    padding-left: 0px;
+}

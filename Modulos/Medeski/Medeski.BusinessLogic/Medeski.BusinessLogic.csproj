@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61AD4400-2CC6-41FB-A319-8A6E5BBAE540}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Medeski.BusinessLogic</RootNamespace>
+    <AssemblyName>Medeski.BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\CCargueCuentasEspeciales.cs" />
+    <Compile Include="Class\CCargueDistribucion.cs" />
+    <Compile Include="Class\CCargueDrives.cs" />
+    <Compile Include="Class\CCargueGastosArea.cs" />
+    <Compile Include="Class\CCargueGastosLaborales.cs" />
+    <Compile Include="Class\CCargueGente.cs" />
+    <Compile Include="Class\CCentroCosto.cs" />
+    <Compile Include="Class\CCentroOperacion.cs" />
+    <Compile Include="Class\CClaseparametros.cs" />
+    <Compile Include="Class\CCompanias.cs" />
+    <Compile Include="Class\CCuentas.cs" />
+    <Compile Include="Class\CDelegados.cs" />
+    <Compile Include="Class\CDistribMAS.cs" />
+    <Compile Include="Class\CHistoricoPYG.cs" />
+    <Compile Include="Class\CPorcentajesPYG.cs" />
+    <Compile Include="Class\CRedistribucionDrivers.cs" />
+    <Compile Include="Class\CDistribucionDedicacionPersonas.cs" />
+    <Compile Include="Class\CDistribucionInfraest.cs" />
+    <Compile Include="Class\CDominios.cs" />
+    <Compile Include="Class\CDrivers.cs" />
+    <Compile Include="Class\CFamiliasProductos.cs" />
+    <Compile Include="Class\CGastosViaje.cs" />
+    <Compile Include="Class\CGente.cs" />
+    <Compile Include="Class\COpcionesMenu.cs" />
+    <Compile Include="Class\COpcionesMenuRol.cs" />
+    <Compile Include="Class\CParametros.cs" />
+    <Compile Include="Class\CParametrosGenerales.cs" />
+    <Compile Include="Class\CPeriodoPresupuesto.cs" />
+    <Compile Include="Class\CPeriodoTransacciones.cs" />
+    <Compile Include="Class\CPeriodoTransaccionesPersonas.cs" />
+    <Compile Include="Class\CPersonas.cs" />
+    <Compile Include="Class\CProductos.cs" />
+    <Compile Include="Class\CProductosIntermedios.cs" />
+    <Compile Include="Class\CProductosItems.cs" />
+    <Compile Include="Class\CRedistribucion.cs" />
+    <Compile Include="Class\CRoles.cs" />
+    <Compile Include="Class\CSalidaPresupuesto.cs" />
+    <Compile Include="Class\CServidores.cs" />
+    <Compile Include="Class\CUsuarios.cs" />
+    <Compile Include="Class\CUsuariosxRol.cs" />
+    <Compile Include="Class\CUtilidades.cs" />
+    <Compile Include="Class\CVarEconomicas.cs" />
+    <Compile Include="Class\CVlrCuadroServicioDetalle.cs" />
+    <Compile Include="Class\CVlrCuadroServicio.cs" />
+    <Compile Include="Class\CVlrsparamgrales.cs" />
+    <Compile Include="Class\CvwGenteTecnica.cs" />
+    <Compile Include="Class\CVWCuadroVentasPYG.cs" />
+    <Compile Include="Class\CVwProductosDirectos.cs" />
+    <Compile Include="Class\CVWProductosSinPpto.cs" />
+    <Compile Include="Class\CVWReporteRedistribucion.cs" />
+    <Compile Include="Class\CVwSalidaPresupuesto.cs" />
+    <Compile Include="Class\CVwVlrCuadroServicio.cs" />
+    <Compile Include="Class\CVwVlrCuadroServicioTotal.cs" />
+    <Compile Include="Class\CVwVlrGenteTecnicaProd.cs" />
+    <Compile Include="Class\CVwVlrDistribMAS.cs" />
+    <Compile Include="Class\CVwVlrEncabDistribMAS.cs" />
+    <Compile Include="Class\CVwVlrItemsDataCenter.cs" />
+    <Compile Include="Class\CVwVlrItemsInfr.cs" />
+    <Compile Include="Class\CVwVlrProdDataCenter.cs" />
+    <Compile Include="Class\CVwVlrProdInfr.cs" />
+    <Compile Include="Class\CVwVlrRedistribucion.cs" />
+    <Compile Include="Class\CVwVlrServDataCenter.cs" />
+    <Compile Include="Class\DTOCargueArchivoGastosArea.cs" />
+    <Compile Include="Class\DTOCuadroServicio.cs" />
+    <Compile Include="Class\DTOdistribucionPersonas.cs" />
+    <Compile Include="Class\DTOgenericoCargueArchivos.cs" />
+    <Compile Include="Class\DTOgente.cs" />
+    <Compile Include="Class\DTOMeses.cs" />
+    <Compile Include="Class\DTOproductos.cs" />
+    <Compile Include="Class\DTOServidorItem.cs" />
+    <Compile Include="Interfase\ICargueCuentasEspeciales.cs" />
+    <Compile Include="Interfase\ICargueDistribucion.cs" />
+    <Compile Include="Interfase\ICargueDrivers.cs" />
+    <Compile Include="Interfase\ICargueGastosArea.cs" />
+    <Compile Include="Interfase\ICargueGastosLaborales.cs" />
+    <Compile Include="Interfase\ICargueGente.cs" />
+    <Compile Include="Interfase\ICentroCosto.cs" />
+    <Compile Include="Interfase\ICentroOperacion.cs" />
+    <Compile Include="Interfase\IClaseParametros.cs" />
+    <Compile Include="Interfase\ICompanias.cs" />
+    <Compile Include="Interfase\ICuentas.cs" />
+    <Compile Include="Interfase\IDelegados.cs" />
+    <Compile Include="Interfase\IDistribMAS.cs" />
+    <Compile Include="Interfase\IPorcentajesPYG.cs" />
+    <Compile Include="Interfase\IRedistribucionDrivers.cs" />
+    <Compile Include="Interfase\IDistribucionDedicacionPersonas.cs" />
+    <Compile Include="Interfase\IDistribucionInfraest.cs" />
+    <Compile Include="Interfase\IDistribucionIntermedios.cs" />
+    <Compile Include="Interfase\IDominios.cs" />
+    <Compile Include="Interfase\IDrivers.cs" />
+    <Compile Include="Interfase\IFamiliasProductos.cs" />
+    <Compile Include="Interfase\IGastosViaje.cs" />
+    <Compile Include="Interfase\IGente.cs" />
+    <Compile Include="Interfase\IOpcionesMenu.cs" />
+    <Compile Include="Interfase\IOpcionesMenuRol.cs" />
+    <Compile Include="Interfase\IParametros.cs" />
+    <Compile Include="Interfase\IParametrosGenerales.cs" />
+    <Compile Include="Interfase\IPeriodoPresupuesto.cs" />
+    <Compile Include="Interfase\IPeriodoTransacciones.cs" />
+    <Compile Include="Interfase\IPeriodoTransaccPersonas.cs" />
+    <Compile Include="Interfase\IPersonas.cs" />
+    <Compile Include="Interfase\IProductos.cs" />
+    <Compile Include="Interfase\IProductosItems.cs" />
+    <Compile Include="Interfase\IRedistribucion.cs" />
+    <Compile Include="Interfase\IRoles.cs" />
+    <Compile Include="Interfase\ISalidaPresupuesto.cs" />
+    <Compile Include="Interfase\IServidores.cs" />
+    <Compile Include="Interfase\IUsuarios.cs" />
+    <Compile Include="Interfase\IUsuariosxRol.cs" />
+    <Compile Include="Interfase\IUtilidades.cs" />
+    <Compile Include="Interfase\IVarEconomicas.cs" />
+    <Compile Include="Interfase\IVlrCuadroServicioDetalle.cs" />
+    <Compile Include="Interfase\IVlrCuadroServicio.cs" />
+    <Compile Include="Interfase\IVlrsPrmgrales.cs" />
+    <Compile Include="Interfase\IVWCuadroVentasPYG.cs" />
+    <Compile Include="Interfase\IHistoricoPYG.cs" />
+    <Compile Include="Interfase\IVwProductosDirectos.cs" />
+    <Compile Include="Interfase\IVWProductosSinPpto.cs" />
+    <Compile Include="Interfase\IVWReporteRedistribucion.cs" />
+    <Compile Include="Interfase\IVwVlrCuadroServicio.cs" />
+    <Compile Include="Interfase\IVwVlrCuadroServicioTotal.cs" />
+    <Compile Include="Interfase\IVwVlrDistribMAS.cs" />
+    <Compile Include="Interfase\IVwSalidaPresupuesto.cs" />
+    <Compile Include="Interfase\IVwVlrGenteTecnicaProd.cs" />
+    <Compile Include="Interfase\IVwVlrEncabDistribMAS.cs" />
+    <Compile Include="Interfase\IVwVlrItemsDataCenter.cs" />
+    <Compile Include="Interfase\IVwVlrItemsInfr.cs" />
+    <Compile Include="Interfase\IVwVlrProdDataCenter.cs" />
+    <Compile Include="Interfase\IVwVlrProdInfr.cs" />
+    <Compile Include="Interfase\IVwVlrRedistribucion.cs" />
+    <Compile Include="Interfase\IVwVlrServDataCenter.cs" />
+    <Compile Include="Interfase\IvwGenteTecnica.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Medeski.DataAcces\Medeski.DataAcces.csproj">
+      <Project>{23ffc77f-b5ef-4812-8dd9-6c1b8a5c16d4}</Project>
+      <Name>Medeski.DataAcces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Medeski.DataModel\Medeski.DataModel.csproj">
+      <Project>{2fb41104-fefc-43b7-95fd-a27ddbe55418}</Project>
+      <Name>Medeski.DataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

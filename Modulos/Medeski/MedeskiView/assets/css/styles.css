@@ -1,0 +1,752 @@
+/*Modal*/
+/*loader*/
+.modal
+{
+	border-radius: .3rem;
+	width: 80% !important;
+}
+
+.modal .dxpc-header{
+	padding: .75rem 1.25rem !important;
+    margin-bottom: 0 !important;
+    background-color: rgba(0,0,0,.03) !important;
+    border-bottom: 1px solid rgba(0,0,0,.125) !important;
+    color: #6c757d !important;
+	font-weight: bold;
+    font-size: large;
+}
+
+/*loader*/
+.loaderPanel {
+	border: 0;
+	background-color: transparent;
+}
+
+
+.loader {
+	border: 12px solid #d7d7d7;
+	border-radius: 50%;
+	border-top: 12px solid #177DFF;
+	width: 60px;
+	height: 60px;
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+td.cell-edit
+{
+	background-image: url(../../Content/imagenes/editar.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    padding-right: 50px !important;
+}
+
+/*Breadcrumb*/.breadcrumb{
+	background: none;
+	float: right;
+	font-size: 12px;
+    text-transform: capitalize;
+	margin-bottom: 0;
+}
+
+/*Breadcrumb*/.breadcrumb li{
+	background: #ffffff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+	content: ">";
+}
+
+/*Tablas*/
+.dxgvDataRow_MetropolisBlue:hover{
+	background: #fafafa !important;
+}
+
+.dxgv .dxeTextBoxSys{
+	border-radius: .25rem;
+}
+
+
+/*Paginador*/
+.dxp-lead{
+	padding: 14px 16px !important;
+}
+.dxp-num, .dxp-button {
+    padding: 5px !important;	
+}
+
+.dxp-num{
+	padding: 8px 10px!important;
+}
+
+.dxp-num:hover{
+	background-color: #e9ecef;
+	color: #0056b3;
+}
+
+.dxp-current{
+	background-color: #007bff;
+}
+
+.dxp-comboBox{
+	border-radius: 3px;
+	padding: 5px 10px;
+	margin-top: 3px !important;
+}
+
+.dxp-comboBox input{
+	margin: 5px 10px 5px 15px !important;
+}
+
+.dxm-popup{
+	width: 70px !important;
+}
+/*Pagina*/
+html, body{
+	height: 100%;
+}
+
+body{
+	padding: 0;
+}
+
+hr{
+	margin: 30px 4% 10px 4%;
+}
+footer{
+	padding: 0 4%;
+	font: 13px 'Segoe UI', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+}
+#seccion, #wrapper, #wrapper form, .mainContentPane, .contentPane, #ContenidoDer{
+	/*height: 100%;*/
+}
+
+#cuerpo {
+	background-image: url("../img/Fondo_Mddeski.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-overflow: auto;
+	background-attachment: fixed;
+	background-position: center center; 
+	overflow: auto;
+	position: relative;
+}
+
+@media (min-width: 650px) {
+  /*Estilo zona traslucida login*/ #zonatransparencia {
+    float:right;
+    position:relative;
+    width:400px;
+    height:100vh;
+    background:rgba(16,15,15,0.82);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+}
+
+@media (max-width: 650px) {
+  /*Estilo zona traslucida login moviles*/ #zonatransparencia {
+    float:right;
+    position:relative;
+    width:100vw;
+    height:100vh;
+    background:rgba(16,15,15,0.82);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  	
+}
+
+@media (orientation: landscape) and (max-height: 412px) {
+  /* -New- Estilo zona traslucida login moviles*/ #zonatransparencia {
+    height:100vh;
+    overflow:auto;
+  }
+}
+
+/*Estilo Contenedor formulario login*/ #SeccionLogin {
+  height:auto;
+  min-width:320px;
+}
+
+@media (max-width: 360px) {
+  /*Estilo Contenedor formulario login moviles*/ #SeccionLogin {
+    height:100vh;
+  }  
+}
+
+@media (min-width: 360px) {
+  /*Estilo Contenedor formulario login*/ #SeccionLogin {
+    padding-top:20%;
+    padding-bottom:20%;
+  }
+}
+
+/*Estilo logo formulario login*/ #logo {
+  height:90px;
+  background-image:url(../../assets/img/Logotipo_Medeski.fw.png);
+  background-position:center center;
+  background-repeat:no-repeat;
+  margin-bottom:40px;
+}
+
+@media (max-width: 640px) {
+  /* -New- Estilo logo formulario login moviles*/  
+  
+  #cuerpo{
+		background-image: url("../img/Fondo_Mddeski_mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-overflow: auto;
+		background-position: center center;
+		overflow: auto;
+		position: relative;
+  }
+  
+  #logo {
+    height:90px;
+    background-image:url(../../assets/img/Logotipo_Medeski.fw.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    margin-bottom:40px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 412px) {
+  /* -New- Estilo logo formulario login moviles*/ #logo {
+    height:90px;
+    background-image:url(../../assets/img/Logotipo_Medeski.fw.png);
+    background-position:center center;
+    background-repeat:no-repeat;
+    margin-top:20px;
+    margin-bottom:10px;
+  }
+}
+
+/*Espaciado menu desplegable*/ .dropdown, .dropup {
+  margin-left:25px;
+}
+
+/*Estilo Div titulos paginas*/ #Titulos {
+  margin-bottom:10px;
+  position:relative;
+  display:block;  
+  overflow: auto;
+}
+
+/*Estilo titulos paginas*/ .titulo1 {
+  color:#a4a1a1;
+  font-size:28px;
+  text-transform: uppercase;  
+}
+
+/*Estilo Div icono paginas*/ #divicono {
+  width:30px;
+  float:left;
+}
+
+/*Estilo Div titulos paginas*/ #divtitulo {
+  padding-top:5px;
+  margin-left:10px;
+  display:block;
+  float: left;
+}
+
+/*Estilo subtitulos paginas*/ .titulo2 {
+  font-weight:bold;
+  color:#177DFF;
+  font-size:15px;  
+  clear: both;
+}
+
+.card-body {
+  -ms-flex:1 1 auto;
+  flex:1 1 auto;
+  padding:1.25rem;
+  border-top:3px;
+}
+
+@media (max-width: 576px) {
+  /*Media Query tarjetas dispositivos moviles pequeños*/ #tarjeta_item {
+    max-width:230px;
+    min-width:230px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#cccccc;
+    border-left:none;
+    border-right:none;
+    padding:20px 0px 20px 0px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+}
+
+@media (min-width: 576px) {
+  /*Media Query tarjetas dispositivos moviles pequeños*/ #tarjeta_item {
+    max-width:576px;
+    min-width:576px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#cccccc;
+    border-left:none;
+    border-right:none;
+    padding:20px 0px 20px 0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+}
+
+@media (max-width: 767px) {
+  /*Media Query tarjetas dispositivos moviles medianos*/ 
+	span.dxichCellSys.dxeTAR, *[dir='rtl'] span.dxichCellSys.dxeTAL{
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+  /*Media Query tarjetas dispositivos moviles medianos*/ #tarjeta_item {
+    max-width:576px;
+    min-width:576px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#cccccc;
+    border-left:none;
+    border-right:none;
+    padding:20px 0px 20px 0px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+}
+
+/*Alineacion imagen producto en tarjeta*/ #min_img_producto {
+  text-align:center;
+  justify-content:center;
+  margin-top:10px;
+}
+
+/*Color texto precio principal en tarjeta*/.texto_precio_ppal {
+  color:#000000;
+}
+
+/*Color texto precio principal tachado en tarjeta*/ .texto_precio_ppal_tachado {
+  color:#cccccc;
+  text-decoration:line-through;
+}
+
+/*Color texto precio con descuento en tarjeta*/ .texto_precio_dscto {
+  color:#FF8000;
+}
+
+/*Color texto codigo referencia en tarjeta*/ .texto_referencia {
+  color:#c10c10;
+  padding:0;
+  margin:0;
+}
+
+/*Color texto cantidad disponible en tarjeta*/ .texto_disponible {
+  color:#85b200;
+}
+
+/*Color texto Nulo en tarjeta*/ .texto_nulo {
+  color:#ffffff;
+}
+
+/*Color texto nombre item en tarjeta*/ .texto_item {
+  color:#555353;
+  font-size:14px;
+  font-weight:500;
+  padding:0;
+}
+
+/*Color texto cantidad monto en lista de detalle*/ .texto_monto {
+  color:#85b200;
+  font-size:13px;
+}
+
+/*Color texto refrencia monto en lista de detalle*/ .texto_referencia_lista {
+  color:#c10c10;
+  font-size:13px;
+  padding:0;
+}
+
+/*Color texto Valor Unitario en lista de detalle*/ .texto_modelo_valorunitario {
+  color:#555353;
+  font-size:13px;
+}
+
+/*Color texto fila de titulos en tabla lista de detalle*/ .texto_fila_titulos {
+  color:#555353;
+  font-size:14px;
+}
+
+/*Estilo texto centrado donde de aplique*/.centrar_texto {
+  text-align:center;
+}
+
+/*Estilo texto alineado izquierda donde de aplique*/ .izquierda_texto {
+  text-align:left;
+}
+
+/*Estilo titulotipo1 en tabla resumen de compra*/ .titulos_resumen_detalle1 {
+  color:#555353;
+  font-size:20px;
+  font-weight:400;
+  text-align:left;
+}
+
+/*Estilo titulotipo1 en tabla resumen de compra*/ .titulos_resumen_detalle3_enfasis {
+  color:#cc1100;
+  font-size:15px;
+  font-weight:800;
+  text-align:right;
+  float:right;
+  /*padding-top:120px;*/
+}
+
+/*Estilo titulotipo1 en tabla resumen de compra*/ .titulos_resumen_detalle1_enfasis {
+  color:#555353;
+  font-size:15px;
+  font-weight:800;
+  text-align:left;
+  /*padding-top:120px;*/
+}
+
+/*Estilo titulotipo2 en tabla resumen de compra*/ .titulos_resumen_detalle2 {
+  color:#555353;
+  font-size:14px;
+  font-weight:400;
+  text-align:left;
+}
+
+/*Estilo titulotipo2 en tabla resumen de compra*/ .titulos_resumen_detalle2_enfasis {
+  color:#555353;
+  font-size:14px;
+  font-weight:800;
+  text-align:left;
+}
+
+/*Estilo cifras/numeros en tabla resumen de compra*/ .cifras_resumen_detalle1 {
+  color:#94b200;
+  font-size:20px;
+  font-weight:500;
+  float:right;
+}
+
+/*Estilo cifras/numeros en tabla resumen de compra*/ .cifras_resumen_detalle2 {
+  color:#555353;
+  font-size:20px;
+  font-weight:500;
+  float:right;
+}
+
+/*Estilo cifras/numeros en tabla resumen de compra*/ .cifras_resumen_detalle3 {
+  color:#fb4c01;
+  font-size:20px;
+  font-weight:500;
+  float:right;
+}
+
+/*Estilo cifras/numeros en tabla resumen de compra*/ .cifras_resumen_detalle4 {
+  color:#555353;
+  font-size:14px;
+  font-weight:100;
+  float:right;
+}
+
+/*Alto del Div contenedor de la Lista Detalles*/ #lista_compra {
+  height:390px;
+  min-width:320px;
+  overflow:auto;
+}
+
+/*Alto del Div contenedor de la Lista Detalles*/ #lista_compra::-webkit-scrollbar {
+  width:0.25em;
+}
+
+/*Alto del Div contenedor de la Lista Detalles*/ #tarjeta_anuncios::-webkit-scrollbar {
+  width:0.25em;
+}
+
+/*Alto del Div contenedor de la Lista Detalles*/ #lista_compra::-webkit-scrollbar:horizontal {
+  height:0.25em;
+}
+
+/*Alto del Div contenedor de la Lista Detalles*/ #lista_compra::-webkit-scrollbar-track {
+  width:0.1em;
+}
+
+/*Alto del Div contenedor de la Lista Detalles*/ #tarjeta_anuncios::-webkit-scrollbar-track {
+  width:0.1em;
+}
+
+/*Alto del Div contenedor de la Lista Detalles*/ #lista_compra::-webkit-scrollbar-track-piece {
+  background-color:transparent;
+}
+
+/*Alto del Div contenedor de la Lista Detalles*/ #tarjeta_anuncios::-webkit-scrollbar-track-piece {
+  background-color:transparent;
+}
+
+#lista_compra::-webkit-scrollbar-thumb {
+  background-color:#3a3a3a;
+  border-radius:5px;
+}
+
+#tarjeta_anuncios::-webkit-scrollbar-thumb {
+  background-color:#3a3a3a;
+  border-radius:5px;
+}
+
+#lista_compra::-webkit-scrollbar-thumb:horizontal {
+  background-color:#3a3a3a;
+  border-radius:5px;
+}
+
+#botones_lista_compra {
+  min-width:320px;
+  /*float:right;*/
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  margin-bottom:30px;
+}
+
+/*Alto, ancho, espaciado filas de la Lista Detalles*/ #fila_lista {
+  width:100%;
+  height:50px;
+  padding-bottom:10px;
+  /*text-align:center;*/
+}
+
+/*Alto, ancho, espaciado filas de titulos de la tabla Lista Detalles*/ #fila_titulos {
+  width:100%;
+  height:20px;
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  border-bottom-color:#cccccc;
+  margin-bottom:10px;
+  padding-bottom:30px;
+  /*text-align:center;*/
+}
+
+@media (max-width: 360px) {
+  /*DIV resumen de la Compra en pagina detalle*/ #resumen_compra {
+    border-radius:10px;
+    padding:10px 15px 0px 15px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+}
+
+@media (min-width: 361px) {
+  /*DIV resumen de la Compra en pagina detalle*/ #resumen_compra {
+    min-height:290px;
+    height:360px;
+  }
+}
+
+@media (max-width: 768px) {
+  /*DIV resumen de la Compra en pagina detalle*/ #resumen_compra {
+    border-radius:10px;
+    min-height:300px;
+    width:auto;
+    min-width:290px;
+    padding:10px 15px 0px 15px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+/*DIV resumen de la Compra en pagina detalle*/ #resumen_compra {
+  border-radius:10px;
+  height:290px;
+  min-height:290px;
+  width:auto;
+  min-width:360px;
+  padding:10px 15px 0px 15px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:30px;
+}
+
+/*Espaciado inferior entre tarajetas */ .margen_abajo_filas_tarjetas {
+  margin-bottom:5px;
+}
+
+#adress_resume {
+  border-style:solid;
+  border-width:1px;
+  border-color:#ccc;
+  border-left:none;
+  border-right:none;
+  padding:10px 0px 10px 0px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:5px;
+  margin-bottom:30px;
+  width:auto;
+  min-width:320px;
+  /*min-height:280px;*/
+}
+
+.table-responsive {
+  display:block;
+  width:100%;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  -ms-overflow-style:-ms-autohiding-scrollbar;
+}
+
+.text_separator_resumen_compra {
+  color:#f8f9fa;
+  font-size:2px;
+  /*font-weight:500;*/
+  text-align:left;
+}
+
+/*Anuncios de texto en pantalla Pedidos */ #tarjeta_anuncios {
+  width:auto;
+  height:140px;
+  /*min-width:290px;*/
+  /*max-width:576px;*/
+  /*min-width:576px;*/
+  border-style:solid;
+  border-width:1px;
+  border-color:#cccccc;
+  border-left:none;
+  border-right:none;
+  padding:10px 0px 5px 0px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:13px;
+  /*margin-bottom:10px;*/
+  font-size:12px;
+  overflow-y:auto;
+}
+
+/*Anuncios de texto en pantalla Pedidos */ #tarjeta_anuncios_2 {
+  width:auto;
+  height:270px;
+  /*max-width:576px;*/
+  min-width:290px;
+  border-style:solid;
+  border-width:1px;
+  border-color:#cccccc;
+  border-left:none;
+  border-right:none;
+  padding:10px 0px 5px 0px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:13px;
+  /*margin-bottom:10px;*/
+  font-size:12px;
+  overflow-y:auto;
+}
+
+.steps-progressbar > ul {
+  display:table;
+  table-layout:fixed;
+  border-collapse:separate;
+  margin:12px 0 10px;
+  width:100%;
+  padding:0;
+  list-style:none;
+  color:#999;
+  font-size:14px;
+  font-weight:400;
+}
+
+.steps-progressbar > ul > li {
+  position:relative;
+  display:table-cell;
+  list-style-type:none;
+  font-weight:400;
+  text-align:center;
+}
+
+.steps-progressbar > ul > li:before {
+  position:inherit;
+  display:block;
+  margin:10px auto 20px;
+  width:30px;
+  height:30px;
+  border:2px solid #ededed;
+  border-radius:50%;
+  background-color:#fff;
+  line-height:30px;
+  content:" ";
+  z-index:1;
+}
+
+.steps-progressbar > ul > li:after {
+  position:absolute;
+  top:22px;
+  right:50%;
+  width:100%;
+  height:5px;
+  box-shadow:inset 0 0 5px #f2f8fc;
+  background-color:#e3e3e3;
+  content:" ";
+  z-index:0;
+}
+
+.steps-progressbar > ul > li:first-child:after {
+  content:none;
+}
+
+.steps-progressbar > ul > li.active:before, .steps-progressbar > ul > li.previous:before {
+  border-color:#e3e3e3;
+  border-width:thick;
+  background-color:#c10;
+}
+
+.steps-progressbar > ul > li.active:after, .steps-progressbar > ul > li.previous:after {
+  /*box-shadow:none;*/
+  background-color:#c10;
+}
+
+.steps-progressbar > ul > li.active:before {
+  margin-top:0;
+  margin-bottom:15px;
+  width:40px;
+  height:40px;
+}
+
+#contenedor-progress {
+  width:auto;
+  margin-left:auto;
+  margin-right:auto;
+}
+

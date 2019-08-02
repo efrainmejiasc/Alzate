@@ -1,0 +1,819 @@
+.redirect
+{
+	visibility: hidden;
+}
+
+.guardar
+{
+	background-image: url("../../Content/imagenes/guardar.png");
+    background-repeat: no-repeat;
+    background-position: 12% 50%;
+}
+
+/*Botón Regresar*/
+.regresar
+{
+	background-image: url("../../Content/imagenes/regresar.png");
+    background-repeat: no-repeat;
+    background-position: 12% 50%;
+}
+.regresar:hover
+{
+	background-image: url("../../Content/imagenes/regresar_blanco.png");
+}
+
+/*Botón Regresar*/
+.limpiar 
+{
+	background-image: url("../../Content/imagenes/refresh.png");
+    background-repeat: no-repeat;
+    background-position: 12% 50%;
+}
+.limpiar:hover
+{
+	background-image: url("../../Content/imagenes/refresh_blanco.png");
+}
+
+/*Botón Nuevo*/
+.nuevo
+{
+	background-image: url("../../Content/imagenes/agregar.png");
+    background-repeat: no-repeat;
+    background-position: 12% 50%;
+}
+.nuevo:hover
+{
+	background-image: url("../../Content/imagenes/agregar_blanco.png");
+}
+
+
+.modificar
+{
+	background-image: url("../../Content/imagenes/modificar.png");
+    background-repeat: no-repeat;
+    background-position: 12% 50%;
+}
+
+/*Botón Nuevo*/
+.download
+{
+	background-image: url("../../Content/imagenes/download.png");
+    background-repeat: no-repeat;
+    background-position: 12% 50%;
+}
+.download:hover
+{
+	background-image: url("../../Content/imagenes/download_blanco.png");
+}
+
+
+/*Botón Buscar*/
+.search
+{
+	background-image: url("../../Content/imagenes/search.png");
+    background-repeat: no-repeat;
+    background-position: 12% 50%;
+}
+.search:hover
+{
+	background-image: url("../../Content/imagenes/buscar_blanco.png");
+}
+
+.saveIcon:before{
+	content:"";
+}
+
+/*Estilo para grupo en formularios*/ .grupo {
+  position:relative;
+  margin-bottom:45px;
+  text-align:center;
+}
+
+@media (orientation: landscape) and (max-height: 412px) {
+  /* -New- Estilo para grupo en formularios*/ .grupo {
+    margin-bottom:30px;
+  }
+}
+
+/* -New- Estilo campo formulario login*/ .input_login {
+  font-size:16px;
+  padding:10px 10px 5px 5px;
+  width:250px;
+  border:none;
+  border-bottom:1px solid #59B200;
+  background:none;
+  color:#fff;
+}
+
+@media (max-width: 360px) {
+  /*-New- Estilo campo formulario login moviles*/ .input_login {
+    font-size:16px;
+    padding:10px 10px 5px 5px;
+    width:180px;
+    border-bottom:1px solid #59B200;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 412px) {
+  /*Estilo campo formulario login moviles*/ .input_login {
+    font-size:16px;
+    padding:10px 10px 5px 5px;
+  }
+}
+
+/*Estilo campo formulario login seleccionado*/ .input_login:focus {
+  outline:none;
+}
+
+/*Estilo labels formularios internos*/ labelinterno {
+  font-size:16px;
+  font-weight:normal;
+}
+
+/* -New- Estilo labels formulario login*/ 
+input[readonly="readonly"]{
+	background: red;
+}
+
+.alingform label {
+  color:#ffffff;
+  font-size:16px;
+  font-weight:normal;
+  position:absolute;
+  left:35px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+label {
+  /*color:#ffffff;*/
+  font-size:16px;
+  font-weight:normal;
+  left:35px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+@media (max-width: 360px) {
+  /*Estilo labels formulario login en moviles*/ label {
+    font-size:16px;
+    font-weight:normal;
+    position:absolute;
+    left:70px;
+  }
+}
+
+
+
+/*Estilo inputs y labels formulario login seleccionado*/ .input_login:focus ~ label, .input_login:valid ~ label {
+  top:-20px;
+  font-size:14px;
+  color:#fff;
+}
+
+/*Estilo campos formulario login con recordación o memoria*/ 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}
+
+/*Estilo campos formulario login con recordación o memoria*/ 
+input:-webkit-autofill ~label,
+input:-webkit-autofill:hover  ~label,
+input:-webkit-autofill:focus  ~label,
+input:-webkit-autofill:active ~label{
+    top:-20px;
+	font-size:14px;
+	color:#fff;
+}
+
+/*Estilo barra abajo campos de texto formulario antes y despues*/ .bar:before, .bar:after {
+  content:'';
+  bottom:0px;
+  position:absolute;
+  background:#006CD8;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+  height:1px;
+}
+
+/*Estilo barra abajo campos de texto formulario login seleccionado*/ .input_login:focus ~ .bar:before, input_login:focus ~ .bar:after {
+  width:250px;
+  left:35px;
+}
+
+@media (max-width: 360px) {
+  /*Estilo barra abajo campos de texto formulario login seleccionado en moviles*/ .input_login:focus ~ .bar:before, input_login:focus ~ .bar:after {
+    width:180px;
+    left:70px;
+  }
+}
+
+/*label o placeholder campos de texto formulario login*/ .highlight {
+  pointer-events:none;
+}
+
+/*label o placeholder campos de texto formulario login seleccionados*/ .input_login:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+  from {
+    background:#ae5252;
+  }
+  to {
+    width:0;
+    background:transparent;
+  }
+}
+
+button {
+  border-radius:0;
+}
+
+/*Estilo grupo de elementos formulario*/ .form-row {
+  margin-bottom:0rem;
+  padding-top:20px;
+}
+
+#ContenedorFormulario .form-row:last-child {
+  margin-bottom:1rem;
+}
+
+span.dxichCellSys.dxeTAR, *[dir='rtl'] span.dxichCellSys.dxeTAL{
+	width: 50%;
+}
+
+.form-group {
+  margin-bottom:0rem;
+}
+
+.form-group table,
+.delegados table{
+  width: 100%;
+}
+
+
+/*Estilo Botones primario login*/ .boton-formulariologin {
+  margin-top:20px;
+  background-color:#59b200;
+  width:150px;
+  color:#fff;
+  border:1px solid transparent;
+  padding:.375rem .75rem;
+  font-size:1rem;
+  line-height:1.5;
+  border-radius:.25rem;
+  cursor: pointer;
+}
+
+/*Estilo hover Botones primario login*/ .boton-formulariologin:hover {
+  background-color:#006CD8;
+}
+
+/*Estilo Botones primarios internos*/ .boton-formulariosintprim {
+  background-color: #3097D1;
+  border-color: #2a88bd;
+  width:135px;
+  color:#fff;
+  float:right;
+  border:1px solid transparent;
+  padding:.375rem .75rem;
+  font-size:1rem;
+  line-height:1.5;
+  border-radius:.25rem;
+  margin:5px 0px 0px 10px;
+}
+
+/*Estilo hover Botones primarios internos*/ .boton-formulariosintprim:hover {
+  background-color:#337ab7;
+  border-color: #2e6da4;
+}
+
+/*Estilo Botones secundarios internos*/ .boton-formulariosintsec {
+  background-color:#ffffff;
+  width:150px;
+  color:#444;
+  float:right;
+  border:1px solid;
+  padding:.375rem .75rem;
+  font-size:1rem;
+  line-height:1.5;
+  border-radius:.25rem;
+  border-color:#999;
+  margin:5px 0px 5px 10px
+}
+
+/*Estilo Botones hover secundarios internos*/ .boton-formulariosintsec:hover {
+  background-color:#31b0d5;
+  border-color:#ccc;
+  color:#fff;
+}
+
+/*Estilo Botones secundarios internos examinar*/ .boton-formulariosintsec-examinar {
+  background-color:#ffffff;
+  width:150px;
+  color:#cc0001;
+  float:right;
+  border:1px solid;
+  padding:.375rem .75rem;
+  font-size:1rem;
+  line-height:1.5;
+  border-radius:.25rem;
+  border-color:#cc0001;
+}
+
+/*Estilo Botones secundarios internos examinar*/ .boton-formulariosintsec-regresar {
+  background-color:#ffffff;
+  width:150px;
+  color:#cc0001;
+  /*float:right;*/
+  border:1px solid;
+  /*padding:.375rem .75rem;*/
+  font-size:1rem;
+  line-height:1.5;
+  border-radius:.25rem;
+  border-color:#cc0001;
+  margin:5px 0px 0px 0px;
+}
+
+/*Enlace Contrasela Login*/ .enlace {
+  text-align:center;
+  padding-top:30px;
+  color:#fff;
+}
+
+/*color de enlaces*/ a {
+  color:#9c9b9b;
+}
+
+/*Contendor Formulario*/ #ContenedorFormulario {
+	clear: both;
+  margin-top:10px;
+  height:auto;
+}
+
+/*ComboBox*/ .combo .input-group > .input-group-append > .btn, .input-group > .input-group-append > .input-group-text, .input-group > .input-group-prepend:first-child > .btn:not(:first-child), .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child), .input-group > .input-group-prepend:not(:first-child) > .btn, .input-group > .input-group-prepend:not(:first-child) > .input-group-text {
+  background-color:#3a3a3a;
+}
+
+/*campo ancho y margenes*/ .campo {
+  width:100%;
+  margin:15px 0px 15px 0px;
+}
+
+/*gridview ancho y margenes*/ .gridview {
+  width:100% !important;
+  margin:15px 0px 15px 0px;
+  border-radius: .25rem;
+  border: 1px solid #c0c0c0;
+}
+
+.gridview .dxgvHSDC{
+	background: #dee2e6;
+}
+
+/*Alto del Div contenedor de la Lista Detalles*/ .gridview .dxgvCSD::-webkit-scrollbar {
+  width:0.35em;
+}
+
+/*Alto del Div contenedor de la Lista Detalles*/ .gridview .dxgvCSD::-webkit-scrollbar:horizontal {
+  height:0.25em;
+}
+
+/*Alto del Div contenedor de la Lista Detalles*/ .gridview .dxgvCSD::-webkit-scrollbar-track {
+  width:0.1em;
+}
+
+/*Alto del Div contenedor de la Lista Detalles*/ .gridview .dxgvCSD::-webkit-scrollbar-track-piece {
+  background-color:transparent;
+}
+
+/*Alto del Div contenedor de la Lista Detalles*/ .gridview .dxgvCSD::-webkit-scrollbar-thumb{
+	background-color: #3a3a3a;
+    border-radius: 5px;
+}
+
+/*letra contenido tabla*/ table > tbody {
+  font-size:small;
+}
+
+/*header*/ .gridview-header {
+  vertical-align:middle;
+  background-color:#dee2e6;
+  text-align:center;
+  border: 0px;  
+  font-weight:bold;
+}
+
+.gridview-header td{
+  font-size:1.12em;
+}
+
+/*letra header*/ .dxbs-gridview > .card > table > thead > tr > th > a, .dxbs-gridview > .card > table > thead > tr > th > span, .dxbs-gridview .dxbs-th.card > .card-body > a, .dxbs-gridview .dxbs-th.card > .card-body > span, .dxbs-cardview .dxbs-th.card > .card-body > a, .dxbs-cardview .dxbs-th.card > .card-body > span {
+  font-weight:bold;
+  font-size:small;
+}
+
+/*filtro*/ 
+.dxgvFilterRow_MetropolisBlue td.dxgv{
+	border: 0px;
+}
+
+.gridview-filtro {
+  vertical-align:middle;
+  background-color:#dee2e6;
+}
+
+.gridview-filtro > td{
+	border: 0px;
+}
+
+/*fila filtro*/ .dxbs-gridview > .card > table > thead > tr.dxbs-filter-row > td {
+  padding:0px;
+}
+
+/*fila filtro div*/ .dxbs-gridview > .card > table > thead > .dxbs-filter-row > td > div {
+  padding:0px;
+  margin:0% 10% 4% 10%;
+}
+
+/*campo filtro*/ .dxbs-gridview > .card > table > thead > .dxbs-filter-row > td > div > div > div > input {
+  height:23px;
+}
+
+/*combo filtro grupo*/ .dxbs-gridview > .card > table > thead > .dxbs-filter-row > td > div > div > .input-group {
+  width:100%;
+  height:23px;
+  margin:4px 0% 0% 0%;
+}
+
+/*combo filtro input*/ .dxbs-gridview > table > thead > .dxbs-filter-row > td > div > div > div > div > input,
+.gridview .dxeEditAreaSys {
+  height:23px;
+  background:url('../img/filtro10px.fw.png')3px center no-repeat white;
+  padding-left:16px !important;
+  padding-right:3px;
+}
+
+/*combo filtro boton*/ .dxbs-gridview > .card > table > thead > .dxbs-filter-row > td > div > div > div > div > span {
+  background-color:#3a3a3a;
+  width:80%;
+  padding-top:0%;
+  padding-left:20%;
+}
+
+/*combo filtro boton clear*/ .dxbs-gridview > .card > table > thead > .dxbs-filter-row > td > div > div > div > div > .dxbs-feedback {
+  background-color:transparent;
+}
+
+/*link en celda*/ table > tbody > tr > td > a {
+  color:#cc0001;
+}
+
+/*link en celda*/ table > tbody > tr > td > button > span {
+  color:#cc0001;
+}
+
+/*popup*/ .modal-dialog {
+  min-width:50%;
+  max-width:100%;
+  margin:15%;
+}
+
+@media (max-width: 500px) {
+	.modal-dialog {
+		margin:0%;
+	}
+	span.dxichCellSys.dxeTAR, *[dir='rtl'] span.dxichCellSys.dxeTAL{
+		height: 45px;
+	}
+	label {
+		font-size: 16px;
+		font-weight: normal;
+		position: absolute;
+		left: 70px;
+	}
+}
+
+/*popup-header*/ .modal-header {
+  background-color:#3a3a3a;
+  color:white;
+  font-weight:bold;
+  font-size:large;
+}
+
+/*paginador*/ .dxbs-pager .pagination > li > a {
+  border:0;
+  font-weight:bold;
+  font-size:smaller;
+  color:#3a3a3a;
+  text-decoration:underline;
+  padding:2px 10px 2px 10px;
+}
+
+/*paginador ...*/ .dxbs-pager .pagination > li.page-item.disabled.ell {
+  font-weight:bold;
+  margin-top:-8px;
+}
+
+.dxbs-pager .pagination > li.page-item.disabled.ell > span.page-link {
+  border:0px;
+}
+
+/*paginador activo*/ .dxbs-pager .pagination > li.active > a {
+  color:#cc0001;
+  background-color:transparent;
+}
+
+/*paginador ubicacion*/ .dxbs-pager .pagination {
+  float:right;
+}
+
+/*Alineación Boton Formulario*/ #alineacionboton {
+  width:100%;
+  text-align:center;
+}
+
+/* procesando */ .procesando {
+  padding:0px !important;
+  width:150px !important;
+  border-color:#dee2e6;
+}
+
+/* Header del loading */ .header-procesando {
+  background:#cc0001;
+  color:white;
+  text-align:center;
+  padding:8px 5px 8px 5px;
+  margin-bottom:10px;
+  font-weight:bold;
+}
+
+/* Alineacion del loading */ .content-procesando {
+  text-align:center;
+  margin:20px;
+}
+
+/*listbox bootstrap filas*/ .dxbs-listbox > li > .form-check.form-check-inline {
+  padding:25px 0px 25px 0px;
+}
+
+/*listbox bootstrap filas campo*/ .dxbs-listbox > li > div > label {
+  left:0px;
+}
+
+/*listbox bootstrap filas check*/ .dxbs-listbox > li > div > label > .form-check-input {
+  width:100px;
+  margin:0px;
+}
+
+/*listbox bootstrap filas campo activo*/ .list-group-item.active {
+  color:black;
+  background-color:#dee2e6;
+}
+
+/*listbox*/ .listbox {
+  width:100%;
+  margin:15px 0px 15px 0px;
+  height:300px;
+  border-radius:.25rem;
+  border:1px solid #ced4da;
+}
+
+/*Estilo tamaño y menejo de las tablas*/ table.dxeListBox.listbox.dx-acc-r.dxlbcc, table.dxeListBox.listbox.dx-acc-r.dxlbcc > tbody, table.dxeListBox.listbox.dx-acc-r.dxlbcc > tbody > tr {
+  display:flex;
+  width:100%;
+}
+
+/*listbox devexpress filas*/ table.dxeListBox > tbody > tr > td {
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+}
+
+table.dxeListBox > tbody > tr > td > div {
+  width:100% !important;
+}
+
+/*listbox devexpress fila contenido*/ table.dxeListBox > tbody > tr > td > div.dxlbd {
+  height:89.5% !important;
+}
+
+/*listbox devexpress items*/ .dxeListBoxItem {
+  font-family:inherit;
+  font-size:1rem;
+  color:#495057;
+  padding:.25rem 1.5rem .25rem .20rem;
+}
+
+/*listbox devexpress seleccionar todo*/ table.dxeListBox > tbody > tr > td > div.dxeListBoxSelectAll > table > tbody > tr > td > label {
+  color:#495057;
+  position:inherit;
+}
+
+/*listbox devexpress celda seleccionar todo*/ .dxeListBox > tbody > tr > td > .dxeListBoxSelectAll {
+  border-bottom:1px solid #ced4da;
+}
+
+/*listbox devexpress filas campo activo*/ table.dxeListBox > tbody > tr > td > div.dxlbd > table > tbody > tr > td.dxeListBoxItem.dxeListBoxItemSelected {
+  background-color:#dee2e6;
+  color:#495057;
+}
+
+/*etiqueta*/ .etiqueta {
+  font-weight:bold;
+  width:100%;
+}
+
+/*etiqueta importante*/ .etiqueta-importante {
+  font-weight:bold;
+  width:100%;
+  color:#cc0001;
+  font-size:large;
+}
+
+/*Margen del icono en los botones*/ .margeniconosbotones {
+  margin-right:3px;
+}
+
+/*boton ordenar columna*/ .btn-link {
+  color:#3a3a3a;
+}
+
+/*icono filtro*/ .dxbs-gridview > .card > table > thead > .dxbs-filter-row > td > div > div > div > input {
+  background:url('../img/filtro10px.fw.png')3px center no-repeat white;
+  padding-left:16px;
+  padding-right:3px;
+}
+
+/*Estilos para Carrousel de Imegenes pagina de incio*/ .carousel {
+  text-align:-webkit-center;
+}
+
+.carousel-control-prev-icon {
+  background-image:url([svg]);
+}
+
+.carousel-control-next-icon {
+  background-image:url([svg]);
+}
+
+.carousel-indicators li {
+  background-color:rgba(0,0,0,.5);
+}
+
+.carousel-indicators .active {
+  background-color:#cc0001;
+}
+
+/*Campo de cantidad en la lista de detalle del carrito de Compras*/ .input_lista_detalle_car {
+  color:#555353;
+  font-size:15px;
+  border-width:1px;
+  border-color:#cccccc;
+  border-style:solid;
+  width:50px;
+  height:20px;
+  text-align:center;
+}
+
+/*Campo check en la lista de detalle del carrito de Compras*/ .input_lista_check {
+  font-size:16px;
+  font-weight:800;
+  /*border-width:1px;*/
+  /*border-color:#fb4c01;*/
+  border-style:solid;
+  width:20px;
+  height:20px;
+}
+
+/*Color del icono para Borrar un item*/ .fa.fa-times-circle-o {
+  color:#c10c10;
+}
+
+/*Boton cancelar de sweealert*/ .sweet-alert button.cancel {
+  background-color:#ffffff !important;
+  color:#cc0001 !important;
+  border:1px solid;
+  border-radius:.25rem;
+  border-color:#cc0001;
+}
+
+/*Boton Confirmar de sweealert*/ .sweet-alert button {
+  background-color:#3097D1;
+  border:1px solid;
+  border-color:#cc0001;
+}
+
+/*Color de confirmación del gridview editable*/ .bg-success {
+  background-color:rgba(255, 255, 255, 0.00) !important;
+}
+
+/*Estilo general snipper de cantidad en tarjeta*/ .fb-quantity-input {
+  font-family:Lato,sans-serif;
+  font-weight:200;
+  -ms-flex-align:center;
+  border-radius:5px;
+  border:1px solid #e0e0e0;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-flow:nowrap;
+  height:40px;
+  line-height:1.5;
+  -ms-flex-pack:center;
+  justify-content:center;
+  min-width:130px;
+  max-width:130px;
+  margin-left:15px;
+}
+
+/*Estilo boton - en snipper*/ .fb-quantity-input__minus {
+  border-bottom-left-radius:5px;
+  /*border-right:9px solid #f0f0f0;*/
+  border-top-left-radius:5px;
+  margin-right:10px;
+}
+
+/*Estilo boton + en snipper*/ .fb-quantity-input__plus {
+  border-bottom-right-radius:5px;
+  /*border-left:1px solid #f0f0f0;*/
+  border-top-right-radius:5px;
+  margin-left:10px;
+}
+
+/*Estilo botones + y - en snipper de cantidad en tarjeta*/ .fb-quantity-input__minus, .fb-quantity-input__plus {
+  background:#fff;
+  background:none;
+  border:none;
+  color:#999999;
+  -ms-flex-positive:1;
+  flex-grow:1;
+  font-weight:600;
+  height:100%;
+  outline:none;
+  text-align:center;
+  transition:color .3s ease 50ms;
+  width:27px;
+}
+
+/*Estilo input de texto en snipper de cantidad en tarjeta*/ .fb-quantity-input__field {
+  /*border:1px solid #e0e0e0;*/
+  border-top:none;
+  border-bottom:none;
+  border-left:none;
+  border-right:none;
+  font-size:0.9rem;
+  height:100%;
+  max-width:calc(100% - 54px);
+  text-align:center;
+  color:#999999;
+  -moz-appearance:textfield;
+}
+
+/*Estilo input de texto en snipper de cantidad en tarjeta*/ .fb-product-cta .fb-product-sets__quantity {
+  -ms-flex-order:1;
+  order:1;
+  position:relative;
+  width:40%;
+}
+
+/*Estilo boton de descuento tarjeta*/ .boton-formulariosintprim_car_dscto {
+  background-color:#FF8000;
+  width:130px;
+  color:#fff;
+  border:1px solid transparent;
+  font-size:1rem;
+  line-height:1.5;
+  border-radius:.25rem;
+  margin:5px 0px 0px 0px;
+}
+
+/*Estilo boton con hover sin descuento tarjeta*/ .boton-formulariosintprim_car_dscto:hover {
+  background-color:#a4580a;
+}
+
+/*Estilo boton sin descuento tarjeta*/ .boton-formulariosintprimcar {
+  background-color:#85b200;
+  width:130px;
+  color:#fff;
+  border:1px solid transparent;
+  font-size:1rem;
+  line-height:1.5;
+  border-radius:.25rem;
+  margin:5px 0px 0px 0px;
+}
+
+/*Estilo boton con hover sin descuento tarjeta*/ .boton-formulariosintprimcar:hover {
+  background-color:#556622;
+}
+

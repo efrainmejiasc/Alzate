@@ -1,0 +1,121 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Root.master.cs" Inherits="MedeskiView.RootMaster" %>
+<%-- DXCOMMENT: Page Root.master is a master page that contains the root layout (it includes Header, Cental Area, and Footer) --%>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Medeski</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+    <%--
+    <link rel="stylesheet" type="text/css" href="Content/css/Site.css" />
+    <link rel="stylesheet" type="text/css" href="Content/css/columnas.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="Content/css/componentes.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="Content/css/sobreescribir.css" media="all" />
+    --%>
+
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" media="all"/>
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/fonts/ionicons.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-awesome.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/css/form.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/css/Sidebar-Menu-SIM.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" media="all" />
+
+    <link rel="stylesheet" type="text/css" href="assets/js/sweet-alert/sweetalert.css" media="all" />
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/cuantificador.js"></script>
+    <script src="../assets/js/Sidebar-Menu.js"></script>
+    <script src="../assets/js/sweet-alert/sweetalert-dev.js"></script>
+    <script src="../assets/js/sweet-alert/mensajes.js"></script>
+
+</head>
+<body runat="server" id="Body">
+    <section id="seccion">
+        <div id="wrapper" class="toggled">
+            <div class="container-fluid" id="horizontalbar">
+                <div>
+                    <div class="float-left" id="iconmenu">
+                        <a class="btn btn-link botonesmenu" role="button" href="#menu-toggle" id="menu-toggle" onclick="abrirMenu()" ><i class="fa fa-reorder" style="color:rgb(255,255,255);font-size:26px;margin-top:6px;"></i></a>
+                    </div>
+                    
+                    <div id="Logomenu"><a><img src="../assets/img/Logotipo_Medeski_peq.png"></a></div>
+
+                    <div class="float-right" id="iconsalida">
+                        <a class="btn btn-link" role="button" onclick="MostrarEsconder3()" id="menu-exit"><i class="icon ion-android-person" id="icon_user_salida" style="color:rgb(255,255,255);font-size:21px;"></i></a>
+                    </div>
+                    <div class="float-right" id="quieneres">
+                        <p>Período: <%=Session["peri_activo"]%></p>
+                    </div>
+
+                    <div id="perfil_card">
+                       <div class="row titulos_resumencart">
+                           <div class="col-12 col-lg-12 col-xl-12">
+                               <p class="text-left" style="padding-left:15px;padding-top:5px;margin-bottom:20px;">Mi Perfil</p>
+                           </div>
+                       </div>
+                       <div id="resumenprofile_items">
+                           <div class="row">
+                               <div class="col">
+                                   <div id="profile_photo"><i class="icon ion-android-person" id="photo_user" style="color:rgb(255,255,255);font-size:60px;"></i></div>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-12 text-center textos_profile_card_user1" style="padding-top:10px;">
+                                   <div><%=Session["usuario"].ToString().Split(';')[0].ToString()%></div>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-12 text-center textos_profile_card_user2">
+                                   <div>
+                                       Developer Developer
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-12 text-center textos_profile_card_user3">
+                                   <div><%=Session["usuario"].ToString().Split(';')[0].ToString()%>fanalca.com</div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="col-5 col-lg-4 col-xl-6 offset-7 offset-sm-7 offset-md-7 offset-lg-8 offset-xl-6">
+                               <button class="btn btn-primary boton-formulariosintprim" type="button" onclick="window.location.href='/Forms/frmSalir.aspx'" style="margin-right:10px; margin-top: 10px;">
+                                   <i class="fa fa-sign-out" style="padding-bottom:0px;font-size:20px;"></i>
+                                   <span style="font-size:15px;">Cerrar Sesión</span>
+                               </button>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <%-- <div class="peri_activo">Período: <%=Session["peri_activo"]%></div> --%>
+            <form id="form1" runat="server" onkeypress="if(event.keyCode == 13) event.preventDefault();" >
+                <dx:ASPxGlobalEvents runat="server">
+                    <ClientSideEvents ControlsInitialized="updateHeaderMenuOrientation" BrowserWindowResized="updateHeaderMenuOrientation" />
+                </dx:ASPxGlobalEvents>
+                <dx:ASPxPanel ID="MainPane" runat="server" CssClass="mainContentPane">
+                    <PanelCollection>
+                        <dx:PanelContent runat="server" SupportsDisabledAttribute="True">
+                            <asp:ContentPlaceHolder ID="Content" runat="server" />
+                        </dx:PanelContent>
+                    </PanelCollection>
+                </dx:ASPxPanel>
+            </form>              
+        </div>
+    </section>
+    
+    <dx:ASPxLoadingPanel ID="LoadingPanel" runat="server" ClientInstanceName="LoadingPanel" Modal="true"
+       PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" CssClass="loaderPanel" LoadingDivStyle-BackColor="#5e5b5b">
+       <Template>
+           <div>
+               <div class="loader"></div>
+           </div>
+       </Template>
+   </dx:ASPxLoadingPanel>
+
+</body>
+</html>

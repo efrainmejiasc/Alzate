@@ -1,0 +1,216 @@
+:root {
+    --color-primario: #2C5183;
+    --color-secundario: rgba(186, 0, 13, 0.24);
+    --color-terciario: rgba(186, 0, 13, 0.08);
+    --color-letra: white;
+}
+
+/* encabezado */
+.logho {
+    color: var(--color-primario);
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    margin: 12px 12px 18px;
+}
+
+a:hover.logho {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+
+a:visited.logho {
+    color: var(--color-primario);
+    text-decoration: none;
+}
+
+/* titulo formulario */
+.titulo1 {
+    color: var(--color-primario);
+    font-size: x-large;
+    margin: 40px 0px 15px 0px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* boton guardar */
+.guardar {
+    color: var(--color-letra);
+    border: none;
+    text-shadow: none;
+    border-radius: 0px;
+    float: right;
+    margin: 5px 0px 5px 0px;
+    padding-left: 35px;
+    background: url('../Imagenes/guardar.png')3px center no-repeat #2C5183;
+}
+
+.guardar:hover {
+    background: url('../Imagenes/guardar.png')3px center no-repeat #2C5183;
+}
+
+/* boton nuevo */
+.nuevo {
+    color: var(--color-letra);
+    border: none;
+    text-shadow: none;
+    border-radius: 0px;
+    float: right;
+    margin: 5px 0px 5px 0px;
+    padding-left: 35px;
+    background: url('../Imagenes/nuevo.png')3px center no-repeat #2C5183;
+}
+
+.nuevo:hover {
+    background: url('../Imagenes/nuevo.png')3px center no-repeat #2C5183;
+}
+
+/* boton cargar */
+.dxucBrowseButton_Moderno {
+    border: none;
+    text-shadow: none;
+    border-radius: 0px;
+    float: right;
+    padding-left: 35px;
+    background: url('../Imagenes/cargar.png')3px center no-repeat #2C5183;
+}
+
+.dxucBrowseButton_Moderno a {
+    color: var(--color-letra);
+}
+
+.dxucBrowseButton_Moderno.dxbf {
+    padding: 8px 14px 7px 35px;
+}
+
+.dxucBrowseButton_Moderno.dxbf a {
+    border: none;
+}
+
+.dxucBrowseButtonPressed_Moderno a {
+    color: var(--color-letra) !important;
+}
+
+/* boton descargar */
+.descargar-csv {
+    color: var(--color-letra);
+    border: none;
+    text-shadow: none;
+    border-radius: 0px;
+    float: right;
+    margin: 5px 0px 5px 0px;
+    padding-left: 35px;
+    background: url('../Imagenes/descargar.png')3px center no-repeat #2C5183;
+}
+
+.descargar-csv:hover {
+    background: url('../Imagenes/descargar.png')3px center no-repeat #2C5183;
+}
+
+/* boton si */
+.opcion-si {
+    color: var(--color-letra);
+    border: none;
+    text-shadow: none;
+    border-radius: 0px;
+    float: left;
+    margin: 5px 0px 5px 0px;
+    padding-left: 35px;
+    background: url('../Imagenes/si.png')3px center no-repeat #2C5183;
+}
+
+.opcion-si:hover {
+    background: url('../Imagenes/si.png')3px center no-repeat #2C5183;
+}
+
+/* boton no */
+.opcion-no {
+    color: var(--color-letra);
+    border: none;
+    text-shadow: none;
+    border-radius: 0px;
+    float: right;
+    margin: 5px 0px 5px 0px;
+    padding-left: 35px;
+    background: url('../Imagenes/no.png')3px center no-repeat #2C5183;
+}
+
+.opcion-no:hover {
+    background: url('../Imagenes/no.png')3px center no-repeat #2C5183;
+}
+
+.campo {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+}
+
+.gridview {
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.mayuscula {
+    text-transform: uppercase;
+}
+
+.izquierda {
+    float: left;
+}
+
+.derecha {
+    float: right;
+}
+
+.cerrarsesion {
+    padding: 8px 10px;
+    color: #fff !important;
+    width: 90px;
+    text-align: left !important;
+    text-shadow: none !important;
+    border-radius: 0px !important;
+    font-weight: normal !important;
+    float: right !important;
+    margin-top: 4px !important;
+    background: url('../imagenes/salir.png')50px center no-repeat #2C5183 !important;
+    border-left-style: none !important;
+    border-left-color: inherit !important;
+    border-left-width: medium;
+    border-right-style: none !important;
+    border-right-color: inherit !important;
+    border-right-width: medium;
+    border-top-style: none !important;
+    border-top-color: inherit !important;
+    border-top-width: medium;
+    border-bottom-style: none !important;
+    border-bottom-color: inherit !important;
+    border-bottom-width: medium;
+}
+
+.cerrarsesion:hover {
+    background: url('../imagenes/salir.png')50px center no-repeat #213F67 !important;
+}
+
+
+.salir {
+    color: white;
+    font-size: small;
+    float: right;
+    border-radius: 0px;
+    padding: 5px 10px 5px 35px;
+    background: url('../imagenes/salir.png')3px center no-repeat #2C5183;
+    text-decoration: none;
+    margin: 10px 10px 0px 0px;
+}
+
+a:hover.salir {
+    color: white;
+}
+
+a:visited.salir {
+    color: white;
+    text-decoration: none;
+}

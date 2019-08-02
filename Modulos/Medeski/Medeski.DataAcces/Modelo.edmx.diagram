@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="24f576790beb4bd6a1c33843851ea763" Name="Diagram1" ZoomLevel="69">
+        <EntityTypeShape EntityType="Model.GE_TCALCULOGASTOSVIAJE" Width="1.5" PointX="5.25" PointY="50.375" />
+        <EntityTypeShape EntityType="Model.GE_TCARGUEARCHIVOS" Width="1.5" PointX="29" PointY="39.75" />
+        <EntityTypeShape EntityType="Model.GE_TCARGUEDISTRIBUCION" Width="1.5" PointX="13.5" PointY="27.625" />
+        <EntityTypeShape EntityType="Model.GE_TCARGUEDRIVERS" Width="1.5" PointX="10.5" PointY="50.375" />
+        <EntityTypeShape EntityType="Model.GE_TCENTROCOSTOPERSONA" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.GE_TCENTROSOPERACION" Width="1.5" PointX="11.25" PointY="36.375" />
+        <EntityTypeShape EntityType="Model.GE_TCLASESPARAMETROS" Width="1.5" PointX="0.75" PointY="46" />
+        <EntityTypeShape EntityType="Model.GE_TCUENTAS" Width="1.5" PointX="8.25" PointY="39.625" />
+        <EntityTypeShape EntityType="Model.GE_TCUENTASCLASIFICACION" Width="1.5" PointX="10.5" PointY="41.625" />
+        <EntityTypeShape EntityType="Model.GE_TDELEGADOS" Width="1.5" PointX="18.75" PointY="40.5" />
+        <EntityTypeShape EntityType="Model.GE_TDISTRIBUCIONCARGUEGA" Width="1.5" PointX="10.5" PointY="45.625" />
+        <EntityTypeShape EntityType="Model.GE_TDISTRIBUCIONDEDICACIONPERSONA" Width="1.5" PointX="15.75" PointY="39.25" />
+        <EntityTypeShape EntityType="Model.GE_TDISTRIBUCIONINFRAESTRUCTURA" Width="1.5" PointX="28.25" PointY="45.25" />
+        <EntityTypeShape EntityType="Model.GE_TDISTRIBUCIONINTERMEDIOS" Width="1.5" PointX="31.25" PointY="45.125" />
+        <EntityTypeShape EntityType="Model.GE_TDISTRIBUCIONMASPROCESOS" Width="1.5" PointX="29" PointY="49.875" />
+        <EntityTypeShape EntityType="Model.GE_TDOMINIOS" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.GE_TDRIVERS" Width="1.5" PointX="21.5" PointY="40.375" />
+        <EntityTypeShape EntityType="Model.GE_TFAMILIAS_PRODUCTOS" Width="1.5" PointX="26" PointY="68.5" />
+        <EntityTypeShape EntityType="Model.GE_THISTORICOPYG" Width="1.5" PointX="16.5" PointY="33.75" />
+        <EntityTypeShape EntityType="Model.GE_TOPCIONESMENU" Width="1.5" PointX="5.25" PointY="68.125" />
+        <EntityTypeShape EntityType="Model.GE_TOPCIONESMENUXROL" Width="1.5" PointX="7.5" PointY="64" />
+        <EntityTypeShape EntityType="Model.GE_TPARAMETROS" Width="1.5" PointX="3" PointY="43.125" />
+        <EntityTypeShape EntityType="Model.GE_TPERIODOPRESUPUESTO" Width="1.5" PointX="8.25" PointY="33.625" />
+        <EntityTypeShape EntityType="Model.GE_TPERIODOTRANSACCIONES" Width="1.5" PointX="15.75" PointY="43.75" />
+        <EntityTypeShape EntityType="Model.GE_TPERIODOTRANSACCPERSONAS" Width="1.5" PointX="21" PointY="45.5" />
+        <EntityTypeShape EntityType="Model.GE_TPORCENTAJESPYG" Width="1.5" PointX="18.75" PointY="33.5" />
+        <EntityTypeShape EntityType="Model.GE_TPRODUCTOS" Width="1.5" PointX="23.75" PointY="42" />
+        <EntityTypeShape EntityType="Model.GE_TPRODUCTOSITEMS" Width="1.5" PointX="26" PointY="45.125" />
+        <EntityTypeShape EntityType="Model.GE_TPROVEEDORES" Width="1.5" PointX="13.5" PointY="39" />
+        <EntityTypeShape EntityType="Model.GE_TREDISTRIBUCION" Width="1.5" PointX="26" PointY="40.5" />
+        <EntityTypeShape EntityType="Model.GE_TREDISTRIBUCION_DRIVERS" Width="1.5" PointX="12.75" PointY="52.625" />
+        <EntityTypeShape EntityType="Model.GE_TRELITEMSDATACENTERPROD" Width="1.5" PointX="31.25" PointY="50.625" />
+        <EntityTypeShape EntityType="Model.GE_TSALIDAPRESUPUESTO" Width="1.5" PointX="31.25" PointY="40.125" />
+        <EntityTypeShape EntityType="Model.GE_TSERVIDORES" Width="1.5" PointX="13.5" PointY="32.125" />
+        <EntityTypeShape EntityType="Model.GE_TUSUARIOS" Width="1.5" PointX="5.25" PointY="54.125" />
+        <EntityTypeShape EntityType="Model.GE_TUSUARIOS_ACCESOS" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Model.GE_TUSUARIOSXROL" Width="1.5" PointX="7.5" PointY="54.75" />
+        <EntityTypeShape EntityType="Model.GE_TVARECONOMICAS" Width="1.5" PointX="5.25" PointY="59.125" />
+        <EntityTypeShape EntityType="Model.GE_TVLR_CUADRO_SERVICIO" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Model.GE_TVLR_CUADRO_SERVICIO_DETALLE" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.PARAMETROSGRALES" Width="1.5" PointX="5.25" PointY="47.25" />
+        <EntityTypeShape EntityType="Model.VLRSPRMGRALES" Width="1.5" PointX="4.75" PointY="5.75" />
+        <EntityTypeShape EntityType="Model.VW_CS_VLR_GA" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.VW_CS_VLR_MAS_DATACENTER" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Model.VW_CS_VLR_MAS_GA" Width="1.5" PointX="6.75" PointY="7.75" />
+        <EntityTypeShape EntityType="Model.VW_CS_VLR_MAS_GENTE_TECNICA_DATAC" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.VW_CS_VLR_MAS_GENTE_TECNICA_INF" Width="1.5" PointX="8.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Model.VW_CS_VLR_MAS_INFRAESTRUCTURA" Width="1.5" PointX="8.75" PointY="7.75" />
+        <EntityTypeShape EntityType="Model.VW_CS_VLR_MAS_SOFTWARE" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="Model.VW_CS_VLR_SERV_ITEM_DATACENTER" Width="1.5" PointX="2.75" PointY="9.75" />
+        <EntityTypeShape EntityType="Model.VW_CS_VLR_SERV_ITEM_INFRAESTRUCTURA" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.VW_CUADRO_VENTAS_PYG" Width="1.5" PointX="10.75" PointY="4.75" />
+        <EntityTypeShape EntityType="Model.VW_GENTE_TECNICA" Width="1.5" PointX="4.75" PointY="10.75" />
+        <EntityTypeShape EntityType="Model.VW_PERIODO_ACTIVO" Width="1.5" PointX="10.75" PointY="8.75" />
+        <EntityTypeShape EntityType="Model.VW_PRESUPUESTO" Width="1.5" PointX="6.75" PointY="11.75" />
+        <EntityTypeShape EntityType="Model.VW_PRODUCTOS_DIRECTOS" Width="1.5" PointX="8.75" PointY="11.75" />
+        <EntityTypeShape EntityType="Model.VW_PRODUCTOS_SIN_PPTO" Width="1.5" PointX="10.75" PointY="11.75" />
+        <EntityTypeShape EntityType="Model.VW_REDISTRIBUCION_SAP" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.VW_REPORTE_DISTRIB_INTERM_CS" Width="1.5" PointX="0.75" PointY="12.75" />
+        <EntityTypeShape EntityType="Model.VW_REPORTE_REDISTRIBUCION" Width="1.5" PointX="12.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_CUADRO_SERVICIO" Width="1.5" PointX="12.75" PointY="12.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_CUADRO_SERVICIO_BPC" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_DATACENTER_PRD" Width="1.5" PointX="14.75" PointY="5.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_DEDICACION_GENTE" Width="1.5" PointX="14.75" PointY="8.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_DISTRIB_INTERM" Width="1.5" PointX="14.75" PointY="11.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_DISTRIB_MAS" Width="1.5" PointX="2.75" PointY="15.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_DISTRIBUCION_CCOSTO" Width="1.5" PointX="8.75" PointY="15.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_ENCABEZ_DISTRIB_MAS" Width="1.5" PointX="14.75" PointY="15.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_GA_GENTE_TECNICA" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_GA_GENTE_TECNICA_GSUITE" Width="1.5" PointX="16.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_GA_GENTE_TECNICA_MODIF" Width="1.5" PointX="4.75" PointY="16.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_GENTE_TECNICA_PROD" Width="1.5" PointX="16.75" PointY="6.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_ITEMS_DATACENTER" Width="1.5" PointX="16.75" PointY="9.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_ITEMS_INFRAESTRUCTURA" Width="1.5" PointX="16.75" PointY="12.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_PRESUPUESTO" Width="1.5" PointX="16.75" PointY="16.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_PROD_DATACENTER" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_PROD_DATACENTER_MODIF" Width="1.5" PointX="18.75" PointY="3.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_PROD_INFRAESTRUCTURA" Width="1.5" PointX="18.75" PointY="6.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_PROD_INFRAESTRUCTURA_MODIF" Width="1.5" PointX="6.75" PointY="18.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_REDISTRIBUCION" Width="1.5" PointX="8.75" PointY="18.75" />
+        <EntityTypeShape EntityType="Model.VW_VLR_SERV_DATACENTER" Width="1.5" PointX="18.75" PointY="10.75" />
+        <AssociationConnector Association="Model.FK_GE_TCALCULOGASTOSVIAJE_DESTINO" />
+        <AssociationConnector Association="Model.FK_GE_TCALCULOGASTOSVIAJE_GRUPO" />
+        <AssociationConnector Association="Model.FK_GE_TCARGUEARCHIVOS_PERIODO" />
+        <AssociationConnector Association="Model.FK_GE_TCARGUEARCHIVOS_PRODUCTO" />
+        <AssociationConnector Association="Model.FK_GE_TCARGUEDISTRIBUCION_GE_TCARGUEDISTRIBUCION_2" />
+        <AssociationConnector Association="Model.FK_GE_TCARGUEDISTRIBUCION_GE_TCENTROSOPERACION_1" />
+        <AssociationConnector Association="Model.FK_GE_TCARGUEDRIVERS_GE_TDRIVERS" />
+        <AssociationConnector Association="Model.FK_GE_TCARGUEDRIVERS_GE_TPERIODO" />
+        <AssociationConnector Association="Model.FK_GE_TCARGUEDRIVERS_GE_TPRODUCTOS" />
+        <AssociationConnector Association="Model.FK_GE_TREDISTRIBUCION_DRIVERS_GE_TCARGUEDRIVERS" />
+        <AssociationConnector Association="Model.FK_GE_THISTORICOPYG_GE_TCENTROSOPERACION" />
+        <AssociationConnector Association="Model.FK_GE_TREDISTRIBUCION_DRIVERS_GE_TCENTROSOPERACION" />
+        <AssociationConnector Association="Model.FK_PARM_CLAP_CLASE" />
+        <AssociationConnector Association="Model.FK_GE_TCUENTASCLASIFICACION_CUENTA" />
+        <AssociationConnector Association="Model.FK_GE_TPRODUCTOSITEMS_CUENTAS" />
+        <AssociationConnector Association="Model.FK_GE_TCUENTASCLASIFICACION_SUBCATEGORIA" />
+        <AssociationConnector Association="Model.FK_GE_TCUENTASCLASIFICACION_TIPO" />
+        <AssociationConnector Association="Model.FK_GE_TDELEGADOS_GE_TPARAMETROS" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONCARGUEGA_GE_TPERIODOPRESUPUESTO" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONCARGUEGA_GE_TPRODUCTOS" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONDEDICACIONPERSONA_GE_TDISTRIBUCIONDEDICACIONPERSONA" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONDEDICACIONPERSONA_GE_TPRODUCTOS" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONDEDICACIONPERSONA_GE_TSERVIDORES" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONINFRAESTRUCTURA_GE_TPERIODOPRESUPUESTO" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONINFRAESTRUCTURA_GE_TPRODUCTOS" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONINFRAESTRUCTURA_GE_TPRODUCTOSITEMS" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONINFRAESTRUCTURA_GE_TSERVIDORES" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONINTERMEDIOS_GE_TPERIODOPRESUPUESTO" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONINTERMEDIOS_GE_TPRODUCTOS_INTERM" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONINTERMEDIOS_GE_TPRODUCTOSDIR" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONINTERMEDIOS_ITEM_INTERMEDIO" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONMASPROCESOS_GE_TDISTRIBUCIONMASPROCESOS" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONMASPROCESOS_GE_TPRODUCTOS" />
+        <AssociationConnector Association="Model.FK_GE_TPRODUCTOS_DRIVER1" />
+        <AssociationConnector Association="Model.FK_GE_TPRODUCTOS_DRIVER2" />
+        <AssociationConnector Association="Model.FK_GE_TFAMILIAS_PRODUCTOS_GE_TPRODUCTOS" />
+        <AssociationConnector Association="Model.FK_GE_TFAMILIAS_PRODUCTOS_GE_TPRODUCTOS1" />
+        <AssociationConnector Association="Model.FK_GE_THISTORICOPYG_GE_TPERIODOPRESUPUESTO" />
+        <AssociationConnector Association="Model.FK_GE_TPORCENTAJESPYG_GE_THISTORICOPYG1" />
+        <AssociationConnector Association="Model.FK_OPCR_OPCM_CONSECUTIVO" />
+        <AssociationConnector Association="Model.FK_GE_TPERIODOTRANSACCIONES_MONEDA" />
+        <AssociationConnector Association="Model.FK_GE_TPERIODOTRANSACCIONES_TIPOVIAJE" />
+        <AssociationConnector Association="Model.FK_GE_TPRODUCTOS_CATEG_SERV" />
+        <AssociationConnector Association="Model.FK_GE_TPRODUCTOS_COMPONENTE" />
+        <AssociationConnector Association="Model.FK_GE_TPRODUCTOS_CRITERIO" />
+        <AssociationConnector Association="Model.FK_GE_TPRODUCTOS_GE_TPARAMETROS" />
+        <AssociationConnector Association="Model.FK_GE_TPRODUCTOS_SERV_VENTA" />
+        <AssociationConnector Association="Model.FK_GE_TPRODUCTOS_TIPO" />
+        <AssociationConnector Association="Model.FK_GE_TPRODUCTOS_TIPO_LICENCIA" />
+        <AssociationConnector Association="Model.FK_GE_TVARECONOMICAS_MES" />
+        <AssociationConnector Association="Model.FK_GE_TVARECONOMICAS_MONEDA" />
+        <AssociationConnector Association="Model.FK_PMGR_PARM_GRUPO" />
+        <AssociationConnector Association="Model.FK_PMGR_PARM_TIPODATO" />
+        <AssociationConnector Association="Model.FK_USUA_PARM_TIPOUSUARIO" />
+        <AssociationConnector Association="Model.FK_GE_TPERIODOTRANSACCIONES_PERIODO" />
+        <AssociationConnector Association="Model.FK_GE_TREDISTRIBUCION_GE_TPERIODOPRESUPUESTO" />
+        <AssociationConnector Association="Model.FK_GE_TRELITEMSDATACENTERPROD_GE_TPERIODOPRESUPUESTO" />
+        <AssociationConnector Association="Model.FK_GE_TSALIDAPRESUPUESTO_PERIODO" />
+        <AssociationConnector Association="Model.FK_GE_TPERIODOTRANSACCIONES_PRODUCTOITEM" />
+        <AssociationConnector Association="Model.FK_GE_TPERIODOTRANSACCIONES_PROVEEDOR" />
+        <AssociationConnector Association="Model.FK_GE_TPERIODOTRANSACCPERSONAS_PERIODOTRANS" />
+        <AssociationConnector Association="Model.FK_GE_TPRODUCTOSITEMS_PRODUCTO" />
+        <AssociationConnector Association="Model.FK_GE_TREDISTRIBUCION_GE_TPRODUCTOS" />
+        <AssociationConnector Association="Model.FK_GE_TREDISTRIBUCION_GE_TPRODUCTOS1" />
+        <AssociationConnector Association="Model.FK_GE_TRELITEMSDATACENTERPROD_GE_TPRODUCTOS" />
+        <AssociationConnector Association="Model.FK_GE_TRELITEMSDATACENTERPROD_GE_TPRODUCTOSITEMS" />
+        <AssociationConnector Association="Model.FK_GE_TSALIDAPRESUPUESTO_PRODUCTOITEM" />
+        <AssociationConnector Association="Model.FK_USXR_USUA_USUARIO" />
+        <EntityTypeShape EntityType="Model.VW_VLR_CUADRO_SERVICIO_TOTAL" Width="1.5" PointX="11.375" PointY="18.75" />
+        <EntityTypeShape EntityType="Model.GE_TCENTROSCOSTOS" Width="1.5" PointX="18.75" PointY="50.375" />
+        <EntityTypeShape EntityType="Model.GE_TCOMPANIAS" Width="1.5" PointX="16.5" PointY="52.75" />
+        <AssociationConnector Association="Model.FK_GE_TCARGUEDRIVERS_GE_TCENTROCOSTOS" />
+        <AssociationConnector Association="Model.FK_GE_TCARGUEDRIVERS_GE_TCOMPANIAS" />
+        <AssociationConnector Association="Model.FK_GE_TCENTROSCOSTOS_CATEGORIA" />
+        <AssociationConnector Association="Model.FK_GE_TCENTROSCOSTOS_GE_TCENTROSCOSTOS" />
+        <AssociationConnector Association="Model.FK_GE_TCENTROSCOSTOS_GE_TCOMPANIAS" />
+        <AssociationConnector Association="Model.FK_GE_TCENTROSCOSTOS_GE_TPARAMETROS" />
+        <AssociationConnector Association="Model.FK_GE_TCENTROSCOSTOS_GE_TPARAMETROS2" />
+        <AssociationConnector Association="Model.FK_GE_TCUENTASCLASIFICACION_CENTROCOSTO" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONCARGUEGA_GE_TCENTROSCOSTOS" />
+        <AssociationConnector Association="Model.FK_GE_TPERIODOTRANSACCIONES_CENTROCOSTO" />
+        <AssociationConnector Association="Model.FK_GE_TSALIDAPRESUPUESTO_CCOSTO" />
+        <EntityTypeShape EntityType="Model.GE_TGENTE" Width="1.5" PointX="21" PointY="50.5" />
+        <AssociationConnector Association="Model.FK_GE_TGENTE_GE_TCENTROSCOSTOS" />
+        <AssociationConnector Association="Model.FK_GE_TGENTE_GE_TCENTROSOPERACION" />
+        <AssociationConnector Association="Model.FK_GE_TGENTE_GE_TPERIODOPRESUPUESTO" />
+        <EntityTypeShape EntityType="Model.VW_SALIDA_PRESUPUESTO" Width="1.5" PointX="13.375" PointY="18.75" />
+        <EntityTypeShape EntityType="Model.GE_TCARGUEARCHIVOSLABORAL" Width="1.5" PointX="4.75" PointY="29.5" />
+        <AssociationConnector Association="Model.FK_GE_TCARGUEARCHIVOSLABORAL_PRESUPUESTO" />
+        <EntityTypeShape EntityType="Model.GE_TPERSONAS" Width="1.5" PointX="26" PointY="50.5" />
+        <AssociationConnector Association="Model.FK_GE_TCENTROSCOSTOS_PERSONAS" />
+        <AssociationConnector Association="Model.FK_GE_TCENTROSCOSTOS_RESP_PPTO" />
+        <AssociationConnector Association="Model.FK_GE_TPERSONAS_CCOSTO" />
+        <AssociationConnector Association="Model.FK_GE_TPERSONAS_GE_TCENTROSOPERACION" />
+        <AssociationConnector Association="Model.FK_GE_TDELEGADOS_GE_TPERSONAS_DELEGADO" />
+        <AssociationConnector Association="Model.FK_GE_TDELEGADOS_GE_TPERSONAS_JEFE" />
+        <AssociationConnector Association="Model.FK_GE_TDISTRIBUCIONDEDICACIONPERSONA_GE_TPERSONAS" />
+        <AssociationConnector Association="Model.FK_GE_TGENTE_GE_TPERSONAS" />
+        <AssociationConnector Association="Model.FK_GE_TPERSONAS_CARGO" />
+        <AssociationConnector Association="Model.FK_GE_TPERSONAS_EMPRESA" />
+        <AssociationConnector Association="Model.FK_GE_TPERSONAS_GE_TPARAMETROS" />
+        <AssociationConnector Association="Model.FK_GE_TPERSONAS_GRUPO" />
+        <AssociationConnector Association="Model.FK_GE_TPERSONAS_METODO" />
+        <AssociationConnector Association="Model.FK_GE_TPERSONAS_TIPOCONT" />
+        <AssociationConnector Association="Model.FK_GE_TPERIODOTRANSACCIONES_PERSONA" />
+        <AssociationConnector Association="Model.FK_GE_TPERIODOTRANSACCPERSONAS_PERSONAS" />
+        <AssociationConnector Association="Model.FK_GE_TPERSONAS_JEFE" />
+        <AssociationConnector Association="Model.FK_GE_TPRODUCTOS_RESPONSABLE" />
+        <AssociationConnector Association="Model.FK_GE_TSALIDAPRESUPUESTO_PERSONA" />
+        <EntityTypeShape EntityType="Model.GE_TROLES" Width="1.5" PointX="5.25" PointY="42.5" />
+        <AssociationConnector Association="Model.FK_OPCR_ROLM_CONSECUTIVO" />
+        <AssociationConnector Association="Model.FK_GE_TROLES_GE_TPARAMETROS" />
+        <AssociationConnector Association="Model.FK_USXR_ROLM_CONSECUTIVO" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

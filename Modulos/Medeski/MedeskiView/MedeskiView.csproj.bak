@@ -1,0 +1,1156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{01DD1D36-D8C6-448F-B8B1-E45ABB78FB74}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MedeskiView</RootNamespace>
+    <AssemblyName>MedeskiView</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UpgradeBackupLocation />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v19.1.Presets, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGauges.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v19.1.Web, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v19.1.Export, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.Resources.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v19.1.Web.WebForms, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v19.1.Web, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpreadsheet.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxRichEdit.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="assets\css\form.css" />
+    <Content Include="assets\css\graficos.css" />
+    <Content Include="assets\css\Sidebar-Menu-SIM.css" />
+    <Content Include="assets\css\styles.css" />
+    <Content Include="assets\fonts\font-awesome.min.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\ionicons.min.css" />
+    <Content Include="assets\fonts\ionicons.svg" />
+    <Content Include="assets\fonts\line-awesome.min.css" />
+    <Content Include="assets\fonts\line-awesome.svg" />
+    <Content Include="assets\img\favicon.png" />
+    <Content Include="assets\img\filtro10px.fw.png" />
+    <Content Include="assets\img\Fondo_Mddeski.jpg" />
+    <Content Include="assets\img\Fondo_Mddeski_mobile.jpg" />
+    <Content Include="assets\img\Logotipo_Medeski.fw.png" />
+    <Content Include="assets\img\Logotipo_Medeski_peq.png" />
+    <Content Include="assets\img\Screen_00.jpg" />
+    <Content Include="assets\img\Screen_00_Mobile.jpg" />
+    <Content Include="assets\img\Screen_01.jpg" />
+    <Content Include="assets\img\Screen_01_Mobile.jpg" />
+    <Content Include="assets\img\Screen_02.jpg" />
+    <Content Include="assets\img\Screen_02_Mobile.jpg" />
+    <Content Include="assets\img\spacer.gif" />
+    <Content Include="assets\js\cuantificador.js" />
+    <Content Include="assets\js\graficos.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\notificaciones.js" />
+    <Content Include="assets\js\random.js" />
+    <Content Include="assets\js\Sidebar-Menu.js" />
+    <Content Include="assets\js\sweet-alert\mensajes.js" />
+    <Content Include="assets\js\sweet-alert\sweetalert-dev.js" />
+    <Content Include="assets\js\sweet-alert\sweetalert.css" />
+    <Content Include="assets\js\sweet-alert\sweetalert.min.js" />
+    <Content Include="assets\js\_random.js" />
+    <Content Include="Content\css\columnas.css" />
+    <Content Include="Content\css\componentes.css" />
+    <Content Include="Content\css\Site.css" />
+    <Content Include="Content\css\sobreescribir.css" />
+    <Content Include="Content\imagenes\agregar.png" />
+    <Content Include="Content\imagenes\agregar_blanco.png" />
+    <Content Include="Content\imagenes\AquaHeader.jpg" />
+    <Content Include="Content\imagenes\BlackGlassHeader.jpg" />
+    <Content Include="Content\imagenes\cargar.png" />
+    <Content Include="Content\imagenes\consultar.png" />
+    <Content Include="Content\imagenes\descargar.png" />
+    <Content Include="Content\imagenes\detalles.png" />
+    <Content Include="Content\imagenes\download.png" />
+    <Content Include="Content\imagenes\download_blanco.png" />
+    <Content Include="Content\imagenes\editar.png" />
+    <Content Include="Content\imagenes\eliminar.png" />
+    <Content Include="Content\imagenes\GlassHeader.jpg" />
+    <Content Include="Content\imagenes\guardar.png" />
+    <Content Include="Content\imagenes\modificar.png" />
+    <Content Include="Content\imagenes\no.png" />
+    <Content Include="Content\imagenes\nuevo.png" />
+    <Content Include="Content\imagenes\PlasticBlueHeader.jpg" />
+    <Content Include="Content\imagenes\RedWineHeader.jpg" />
+    <Content Include="Content\imagenes\refresh.png" />
+    <Content Include="Content\imagenes\refresh_blanco.png" />
+    <Content Include="Content\imagenes\regresar.png" />
+    <Content Include="Content\imagenes\regresar_blanco.png" />
+    <Content Include="Content\imagenes\salir.png" />
+    <Content Include="Content\imagenes\seleccionar.png" />
+    <Content Include="Content\imagenes\si.png" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Forms\frmMonedaItems_form.aspx" />
+    <Content Include="Forms\frmAnoPresupuesto_form.aspx" />
+    <Content Include="Forms\frmCargueDistribucion.aspx" />
+    <Content Include="Forms\frmCentroCostos_form.aspx" />
+    <Content Include="Forms\frmCentroCostos.aspx" />
+    <Content Include="Forms\frmCentroOperaciones_form.aspx" />
+    <Content Include="Forms\frmCentroOperaciones.aspx" />
+    <Content Include="Forms\frmCompanias_form.aspx" />
+    <Content Include="Forms\frmCompanias.aspx" />
+    <Content Include="Forms\frmCostoGenteTecnica.aspx" />
+    <Content Include="Forms\frmCParametros_form.aspx" />
+    <Content Include="Forms\frmCuentasEspeciales_form.aspx" />
+    <Content Include="Forms\frmDelegados.aspx" />
+    <Content Include="Forms\frmDelegados_form.aspx" />
+    <Content Include="Forms\frmDistribucionCuadroServicios.aspx" />
+    <Content Include="Forms\frmDistribucionDataCenterProductos.aspx" />
+    <Content Include="Forms\frmDistribucionDirectos.aspx" />
+    <Content Include="Forms\frmDistribucionInfraestructuraDataCenter.aspx" />
+    <Content Include="Forms\frmDistribucionInfraestructuraItem.aspx" />
+    <Content Include="Forms\frmCargueGente.aspx" />
+    <Content Include="Forms\frmDistribucionInfraestructuraProd.aspx" />
+    <Content Include="Forms\frmDistribucionInfraestructura_Infr.aspx" />
+    <Content Include="Forms\frmDistribucionMAS.aspx" />
+    <Content Include="Forms\frmDistribucionPersonas.aspx" />
+    <Content Include="Forms\frmDistribucionServidoresDataCenter.aspx" />
+    <Content Include="Forms\frmDistribucionValorMAS_Detalle.aspx" />
+    <Content Include="Forms\frmDistribucionValorMAS.aspx" />
+    <Content Include="Forms\frmDrivers_form.aspx" />
+    <Content Include="Forms\frmDrivers.aspx" />
+    <Content Include="Forms\frmCarguePyG.aspx" />
+    <Content Include="Forms\frmFacturacionCargueDrivers.aspx" />
+    <Content Include="Forms\frmGastosViaje_form.aspx" />
+    <Content Include="Forms\frmGente_form.aspx" />
+    <Content Include="Forms\frmItems_form.aspx" />
+    <Content Include="Forms\frmMonedaItems.aspx" />
+    <Content Include="Forms\frmMoneda.aspx" />
+    <Content Include="Forms\frmOpcionesDeMenu.aspx" />
+    <Content Include="Forms\frmParametros_form.aspx" />
+    <Content Include="Forms\frmPersonas_form.aspx" />
+    <Content Include="Forms\frmProductos_form.aspx" />
+    <Content Include="Forms\frmRoles_form.aspx" />
+    <Content Include="Forms\frmRoles.aspx" />
+    <Content Include="Forms\frmPorcentajesPYG.aspx" />
+    <Content Include="Forms\frmProductosSinPpto.aspx" />
+    <Content Include="Forms\frmRedistribucionDrivers.aspx" />
+    <Content Include="Forms\frmAnoPresupuesto.aspx" />
+    <Content Include="Forms\frmCargueCuentasEspeciales.aspx" />
+    <Content Include="Forms\frmCargueGastosLaborales.aspx" />
+    <Content Include="Forms\frmCParametros.aspx" />
+    <Content Include="Forms\frmCuentasEspeciales.aspx" />
+    <Content Include="Forms\frmDistribucionGastosArea.aspx" />
+    <Content Include="Forms\frmDistribucionInfraestructura.aspx" />
+    <Content Include="Forms\frmDistribucionIntemedios.aspx" />
+    <Content Include="Forms\frmGastosViaje.aspx" />
+    <Content Include="Forms\frmGente.aspx" />
+    <Content Include="Forms\frmItems.aspx" />
+    <Content Include="Forms\frmOtrosGastosLaborales.aspx" />
+    <Content Include="Forms\frmParametros.aspx" />
+    <Content Include="Forms\frmPersonas.aspx" />
+    <Content Include="Forms\frmProductos.aspx" />
+    <Content Include="Forms\frmRedistribucion.aspx" />
+    <Content Include="Forms\frmReporteRedistribucion.aspx" />
+    <Content Include="Forms\frmResumenDistribucion.aspx" />
+    <Content Include="Forms\frmSalidaCuadroServicioDetalle.aspx" />
+    <Content Include="Forms\frmSalidaCuadroServicio.aspx" />
+    <Content Include="Forms\frmSalidaCuadroServicioTotal.aspx" />
+    <Content Include="Forms\frmSalidaFacturacion.aspx" />
+    <Content Include="Forms\frmSalidaPresupuesto.aspx" />
+    <Content Include="Forms\frmSalidaPresupuestoTotal.aspx" />
+    <Content Include="Forms\frmSalir.aspx" />
+    <Content Include="Forms\frmServidores_form.aspx" />
+    <Content Include="Forms\frmServidores.aspx" />
+    <Content Include="Forms\frmValorProductoDataCenter.aspx" />
+    <Content Include="Forms\frmVentasPYG.aspx" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Inicio.aspx" />
+    <Content Include="Global.asax" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Light.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Root.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap\3.3.4\css\bootstrap-theme.css" />
+    <Content Include="Styles\bootstrap\3.3.4\css\bootstrap-theme.min.css" />
+    <Content Include="Styles\bootstrap\3.3.4\css\bootstrap.css" />
+    <Content Include="Styles\bootstrap\3.3.4\css\bootstrap.min.css" />
+    <Content Include="Styles\bootstrap\3.3.4\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Styles\bootstrap\3.3.4\js\bootstrap-notify.js" />
+    <Content Include="Styles\bootstrap\3.3.4\js\bootstrap-notify.min.js" />
+    <Content Include="Styles\bootstrap\3.3.4\js\bootstrap.js" />
+    <Content Include="Styles\bootstrap\3.3.4\js\bootstrap.min.js" />
+    <Content Include="Styles\bootstrap\3.3.4\js\notify.js" />
+    <Content Include="Styles\bootstrap\3.3.4\js\notify.min.js" />
+    <Content Include="Styles\bootstrap\3.3.4\js\npm.js" />
+    <Content Include="Styles\bootstrap\bootstrap-growl-master\demo.html" />
+    <Content Include="Styles\bootstrap\bootstrap-growl-master\jquery.bootstrap-growl.js" />
+    <Content Include="Styles\bootstrap\bootstrap-growl-master\jquery.bootstrap-growl.min.js" />
+    <Content Include="Styles\css\Principal.css" />
+    <Content Include="UserControl\BarraHerramientas.ascx" />
+    <Content Include="UserControl\VentanaEliminar.ascx" />
+    <Content Include="UserControl\VentanaValidaciones.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="Styles\bootstrap\3.3.4\css\bootstrap-theme.css.map" />
+    <Content Include="Styles\bootstrap\3.3.4\css\bootstrap.css.map" />
+    <Content Include="Styles\bootstrap\3.3.4\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Styles\bootstrap\3.3.4\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Styles\bootstrap\3.3.4\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Styles\bootstrap\3.3.4\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Styles\bootstrap\bootstrap-growl-master\composer.json" />
+    <Content Include="Styles\bootstrap\bootstrap-growl-master\jquery.bootstrap-growl.coffee" />
+    <Content Include="Styles\bootstrap\bootstrap-growl-master\LICENSE.md" />
+    <Content Include="Styles\bootstrap\bootstrap-growl-master\package.json" />
+    <Content Include="Styles\bootstrap\bootstrap-growl-master\Rakefile" />
+    <Content Include="Styles\bootstrap\bootstrap-growl-master\README.md" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\ionicons.eot" />
+    <Content Include="assets\fonts\ionicons.ttf" />
+    <Content Include="assets\fonts\ionicons.woff" />
+    <Content Include="assets\fonts\line-awesome.eot" />
+    <Content Include="assets\fonts\line-awesome.ttf" />
+    <Content Include="assets\fonts\line-awesome.woff" />
+    <Content Include="assets\fonts\line-awesome.woff2" />
+    <None Include="Properties\PublishProfiles\Pruebas.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CtrCargueCuentasEspeciales.cs" />
+    <Compile Include="Controllers\CtrCargueDistribucion.cs" />
+    <Compile Include="Controllers\CtrCargueDrivers.cs" />
+    <Compile Include="Controllers\CtrCargueGastosArea.cs" />
+    <Compile Include="Controllers\CtrCargueGastosLaborales.cs" />
+    <Compile Include="Controllers\CtrCargueGente.cs" />
+    <Compile Include="Controllers\CtrCentroCosto.cs" />
+    <Compile Include="Controllers\CtrCentroOperacion.cs" />
+    <Compile Include="Controllers\CtrCompanias.cs" />
+    <Compile Include="Controllers\CtrCParametros.cs" />
+    <Compile Include="Controllers\CtrCuentas.cs" />
+    <Compile Include="Controllers\CtrDelegados.cs" />
+    <Compile Include="Controllers\CtrDistribMAS.cs" />
+    <Compile Include="Controllers\CtrDistribucionInfraest.cs" />
+    <Compile Include="Controllers\CtrDistribucionIntermedios.cs" />
+    <Compile Include="Controllers\CtrDistribucionPersonas.cs" />
+    <Compile Include="Controllers\CtrDrivers.cs" />
+    <Compile Include="Controllers\CtrFamiliasProductos.cs" />
+    <Compile Include="Controllers\CtrGastosViaje.cs" />
+    <Compile Include="Controllers\CtrGente.cs" />
+    <Compile Include="Controllers\CtrGenteTecnica.cs" />
+    <Compile Include="Controllers\CtrHistorialPYG.cs" />
+    <Compile Include="Controllers\CtrOpcionesMenu.cs" />
+    <Compile Include="Controllers\CtrOpcionesMenuRol.cs" />
+    <Compile Include="Controllers\CtrParametros.cs" />
+    <Compile Include="Controllers\CtrParametrosGenerales.cs" />
+    <Compile Include="Controllers\CtrPeriodoPresupuesto.cs" />
+    <Compile Include="Controllers\CtrPeriodoTransaccion.cs" />
+    <Compile Include="Controllers\CtrPeriodoTransaccPersonas.cs" />
+    <Compile Include="Controllers\CtrPersonas.cs" />
+    <Compile Include="Controllers\CtrPorcentajesPYG.cs" />
+    <Compile Include="Controllers\CtrProductos.cs" />
+    <Compile Include="Controllers\CtrProductosItems.cs" />
+    <Compile Include="Controllers\CtrRedistribucion.cs" />
+    <Compile Include="Controllers\CtrRedistribucionDrivers.cs" />
+    <Compile Include="Controllers\CtrReporteRedistribucion.cs" />
+    <Compile Include="Controllers\CtrRoles.cs" />
+    <Compile Include="Controllers\CtrSalidaFacturacion.cs" />
+    <Compile Include="Controllers\CtrSalidaPresupuesto.cs" />
+    <Compile Include="Controllers\CtrServidores.cs" />
+    <Compile Include="Controllers\CtrUsuarios.cs" />
+    <Compile Include="Controllers\CtrUsuariosxRol.cs" />
+    <Compile Include="Controllers\CtrUtilidades.cs" />
+    <Compile Include="Controllers\CtrValidador.cs" />
+    <Compile Include="Controllers\CtrVarEconomicas.cs" />
+    <Compile Include="Controllers\CtrVlrCuadroServicioDetalle.cs" />
+    <Compile Include="Controllers\CtrVlrsParamGrales.cs" />
+    <Compile Include="Controllers\CtrVwCuadroServicioTotal.cs" />
+    <Compile Include="Controllers\CtrVWCuadroVentasPYG.cs" />
+    <Compile Include="Controllers\CtrVwProductosDirectos.cs" />
+    <Compile Include="Controllers\CtrVWProductosSinPpto.cs" />
+    <Compile Include="Controllers\CtrVwSalidaPresupuesto.cs" />
+    <Compile Include="Controllers\CtrVwVlrCuadroServicio.cs" />
+    <Compile Include="Controllers\CtrVwVlrDistribMAS.cs" />
+    <Compile Include="Controllers\CtrVwVlrEncabDistribMAS.cs" />
+    <Compile Include="Controllers\CtrVwVlrGenteTecnicaProd.cs" />
+    <Compile Include="Controllers\CtrVwVlrItemsDataCenter.cs" />
+    <Compile Include="Controllers\CtrVwVlrItemsInfr.cs" />
+    <Compile Include="Controllers\CtrVwVlrProdDataCenter.cs" />
+    <Compile Include="Controllers\CtrVwVlrProdInfr.cs" />
+    <Compile Include="Controllers\CtrVwVlrRedistribucion.cs" />
+    <Compile Include="Controllers\CtrVwVlrServDataCenter.cs" />
+    <Compile Include="Controllers\CtrVlrCuadroServicio.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMonedaItems_form.aspx.cs">
+      <DependentUpon>frmMonedaItems_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMonedaItems_form.aspx.designer.cs">
+      <DependentUpon>frmMonedaItems_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAnoPresupuesto_form.aspx.cs">
+      <DependentUpon>frmAnoPresupuesto_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAnoPresupuesto_form.aspx.designer.cs">
+      <DependentUpon>frmAnoPresupuesto_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCargueDistribucion.aspx.cs">
+      <DependentUpon>frmCargueDistribucion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCargueDistribucion.aspx.designer.cs">
+      <DependentUpon>frmCargueDistribucion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCentroCostos_form.aspx.cs">
+      <DependentUpon>frmCentroCostos_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCentroCostos_form.aspx.designer.cs">
+      <DependentUpon>frmCentroCostos_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCentroCostos.aspx.cs">
+      <DependentUpon>frmCentroCostos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCentroCostos.aspx.designer.cs">
+      <DependentUpon>frmCentroCostos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCentroOperaciones_form.aspx.cs">
+      <DependentUpon>frmCentroOperaciones_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCentroOperaciones_form.aspx.designer.cs">
+      <DependentUpon>frmCentroOperaciones_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCentroOperaciones.aspx.cs">
+      <DependentUpon>frmCentroOperaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCentroOperaciones.aspx.designer.cs">
+      <DependentUpon>frmCentroOperaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCompanias_form.aspx.cs">
+      <DependentUpon>frmCompanias_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCompanias_form.aspx.designer.cs">
+      <DependentUpon>frmCompanias_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCompanias.aspx.cs">
+      <DependentUpon>frmCompanias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCompanias.aspx.designer.cs">
+      <DependentUpon>frmCompanias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCostoGenteTecnica.aspx.cs">
+      <DependentUpon>frmCostoGenteTecnica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCostoGenteTecnica.aspx.designer.cs">
+      <DependentUpon>frmCostoGenteTecnica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCParametros_form.aspx.cs">
+      <DependentUpon>frmCParametros_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCParametros_form.aspx.designer.cs">
+      <DependentUpon>frmCParametros_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCuentasEspeciales_form.aspx.cs">
+      <DependentUpon>frmCuentasEspeciales_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCuentasEspeciales_form.aspx.designer.cs">
+      <DependentUpon>frmCuentasEspeciales_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDelegados.aspx.cs">
+      <DependentUpon>frmDelegados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDelegados.aspx.designer.cs">
+      <DependentUpon>frmDelegados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDelegados_form.aspx.cs">
+      <DependentUpon>frmDelegados_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDelegados_form.aspx.designer.cs">
+      <DependentUpon>frmDelegados_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionCuadroServicios.aspx.cs">
+      <DependentUpon>frmDistribucionCuadroServicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionCuadroServicios.aspx.designer.cs">
+      <DependentUpon>frmDistribucionCuadroServicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionDataCenterProductos.aspx.cs">
+      <DependentUpon>frmDistribucionDataCenterProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionDataCenterProductos.aspx.designer.cs">
+      <DependentUpon>frmDistribucionDataCenterProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionDirectos.aspx.cs">
+      <DependentUpon>frmDistribucionDirectos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionDirectos.aspx.designer.cs">
+      <DependentUpon>frmDistribucionDirectos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionInfraestructuraDataCenter.aspx.cs">
+      <DependentUpon>frmDistribucionInfraestructuraDataCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionInfraestructuraDataCenter.aspx.designer.cs">
+      <DependentUpon>frmDistribucionInfraestructuraDataCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionInfraestructuraItem.aspx.cs">
+      <DependentUpon>frmDistribucionInfraestructuraItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionInfraestructuraItem.aspx.designer.cs">
+      <DependentUpon>frmDistribucionInfraestructuraItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCargueGente.aspx.cs">
+      <DependentUpon>frmCargueGente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCargueGente.aspx.designer.cs">
+      <DependentUpon>frmCargueGente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionInfraestructuraProd.aspx.cs">
+      <DependentUpon>frmDistribucionInfraestructuraProd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionInfraestructuraProd.aspx.designer.cs">
+      <DependentUpon>frmDistribucionInfraestructuraProd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionInfraestructura_Infr.aspx.cs">
+      <DependentUpon>frmDistribucionInfraestructura_Infr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionInfraestructura_Infr.aspx.designer.cs">
+      <DependentUpon>frmDistribucionInfraestructura_Infr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionMAS.aspx.cs">
+      <DependentUpon>frmDistribucionMAS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionMAS.aspx.designer.cs">
+      <DependentUpon>frmDistribucionMAS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionPersonas.aspx.cs">
+      <DependentUpon>frmDistribucionPersonas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionPersonas.aspx.designer.cs">
+      <DependentUpon>frmDistribucionPersonas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionServidoresDataCenter.aspx.cs">
+      <DependentUpon>frmDistribucionServidoresDataCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionServidoresDataCenter.aspx.designer.cs">
+      <DependentUpon>frmDistribucionServidoresDataCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionValorMAS_Detalle.aspx.cs">
+      <DependentUpon>frmDistribucionValorMAS_Detalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionValorMAS_Detalle.aspx.designer.cs">
+      <DependentUpon>frmDistribucionValorMAS_Detalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionValorMAS.aspx.cs">
+      <DependentUpon>frmDistribucionValorMAS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionValorMAS.aspx.designer.cs">
+      <DependentUpon>frmDistribucionValorMAS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDrivers_form.aspx.cs">
+      <DependentUpon>frmDrivers_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDrivers_form.aspx.designer.cs">
+      <DependentUpon>frmDrivers_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDrivers.aspx.cs">
+      <DependentUpon>frmDrivers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDrivers.aspx.designer.cs">
+      <DependentUpon>frmDrivers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCarguePyG.aspx.cs">
+      <DependentUpon>frmCarguePyG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCarguePyG.aspx.designer.cs">
+      <DependentUpon>frmCarguePyG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFacturacionCargueDrivers.aspx.cs">
+      <DependentUpon>frmFacturacionCargueDrivers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFacturacionCargueDrivers.aspx.designer.cs">
+      <DependentUpon>frmFacturacionCargueDrivers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGastosViaje_form.aspx.cs">
+      <DependentUpon>frmGastosViaje_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGastosViaje_form.aspx.designer.cs">
+      <DependentUpon>frmGastosViaje_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGente_form.aspx.cs">
+      <DependentUpon>frmGente_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGente_form.aspx.designer.cs">
+      <DependentUpon>frmGente_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmItems_form.aspx.cs">
+      <DependentUpon>frmItems_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmItems_form.aspx.designer.cs">
+      <DependentUpon>frmItems_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMonedaItems.aspx.cs">
+      <DependentUpon>frmMonedaItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMonedaItems.aspx.designer.cs">
+      <DependentUpon>frmMonedaItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMoneda.aspx.cs">
+      <DependentUpon>frmMoneda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMoneda.aspx.designer.cs">
+      <DependentUpon>frmMoneda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOpcionesDeMenu.aspx.cs">
+      <DependentUpon>frmOpcionesDeMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOpcionesDeMenu.aspx.designer.cs">
+      <DependentUpon>frmOpcionesDeMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmParametros_form.aspx.cs">
+      <DependentUpon>frmParametros_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmParametros_form.aspx.designer.cs">
+      <DependentUpon>frmParametros_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPersonas_form.aspx.cs">
+      <DependentUpon>frmPersonas_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPersonas_form.aspx.designer.cs">
+      <DependentUpon>frmPersonas_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProductos_form.aspx.cs">
+      <DependentUpon>frmProductos_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProductos_form.aspx.designer.cs">
+      <DependentUpon>frmProductos_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRoles_form.aspx.cs">
+      <DependentUpon>frmRoles_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRoles_form.aspx.designer.cs">
+      <DependentUpon>frmRoles_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRoles.aspx.cs">
+      <DependentUpon>frmRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRoles.aspx.designer.cs">
+      <DependentUpon>frmRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPorcentajesPYG.aspx.cs">
+      <DependentUpon>frmPorcentajesPYG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPorcentajesPYG.aspx.designer.cs">
+      <DependentUpon>frmPorcentajesPYG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProductosSinPpto.aspx.cs">
+      <DependentUpon>frmProductosSinPpto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProductosSinPpto.aspx.designer.cs">
+      <DependentUpon>frmProductosSinPpto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRedistribucionDrivers.aspx.cs">
+      <DependentUpon>frmRedistribucionDrivers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRedistribucionDrivers.aspx.designer.cs">
+      <DependentUpon>frmRedistribucionDrivers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAnoPresupuesto.aspx.cs">
+      <DependentUpon>frmAnoPresupuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAnoPresupuesto.aspx.designer.cs">
+      <DependentUpon>frmAnoPresupuesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCargueCuentasEspeciales.aspx.cs">
+      <DependentUpon>frmCargueCuentasEspeciales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCargueCuentasEspeciales.aspx.designer.cs">
+      <DependentUpon>frmCargueCuentasEspeciales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCargueGastosLaborales.aspx.cs">
+      <DependentUpon>frmCargueGastosLaborales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCargueGastosLaborales.aspx.designer.cs">
+      <DependentUpon>frmCargueGastosLaborales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCParametros.aspx.cs">
+      <DependentUpon>frmCParametros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCParametros.aspx.designer.cs">
+      <DependentUpon>frmCParametros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCuentasEspeciales.aspx.cs">
+      <DependentUpon>frmCuentasEspeciales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmCuentasEspeciales.aspx.designer.cs">
+      <DependentUpon>frmCuentasEspeciales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionGastosArea.aspx.cs">
+      <DependentUpon>frmDistribucionGastosArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionGastosArea.aspx.designer.cs">
+      <DependentUpon>frmDistribucionGastosArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionInfraestructura.aspx.cs">
+      <DependentUpon>frmDistribucionInfraestructura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionInfraestructura.aspx.designer.cs">
+      <DependentUpon>frmDistribucionInfraestructura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionIntemedios.aspx.cs">
+      <DependentUpon>frmDistribucionIntemedios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDistribucionIntemedios.aspx.designer.cs">
+      <DependentUpon>frmDistribucionIntemedios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGastosViaje.aspx.cs">
+      <DependentUpon>frmGastosViaje.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGastosViaje.aspx.designer.cs">
+      <DependentUpon>frmGastosViaje.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmGente.aspx.cs">
+      <DependentUpon>frmGente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmGente.aspx.designer.cs">
+      <DependentUpon>frmGente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmItems.aspx.cs">
+      <DependentUpon>frmItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmItems.aspx.designer.cs">
+      <DependentUpon>frmItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmOtrosGastosLaborales.aspx.cs">
+      <DependentUpon>frmOtrosGastosLaborales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmOtrosGastosLaborales.aspx.designer.cs">
+      <DependentUpon>frmOtrosGastosLaborales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmParametros.aspx.cs">
+      <DependentUpon>frmParametros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmParametros.aspx.designer.cs">
+      <DependentUpon>frmParametros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPersonas.aspx.cs">
+      <DependentUpon>frmPersonas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPersonas.aspx.designer.cs">
+      <DependentUpon>frmPersonas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProductos.aspx.cs">
+      <DependentUpon>frmProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProductos.aspx.designer.cs">
+      <DependentUpon>frmProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRedistribucion.aspx.cs">
+      <DependentUpon>frmRedistribucion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRedistribucion.aspx.designer.cs">
+      <DependentUpon>frmRedistribucion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmReporteRedistribucion.aspx.cs">
+      <DependentUpon>frmReporteRedistribucion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmReporteRedistribucion.aspx.designer.cs">
+      <DependentUpon>frmReporteRedistribucion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmResumenDistribucion.aspx.cs">
+      <DependentUpon>frmResumenDistribucion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmResumenDistribucion.aspx.designer.cs">
+      <DependentUpon>frmResumenDistribucion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSalidaCuadroServicioDetalle.aspx.cs">
+      <DependentUpon>frmSalidaCuadroServicioDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSalidaCuadroServicioDetalle.aspx.designer.cs">
+      <DependentUpon>frmSalidaCuadroServicioDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSalidaCuadroServicio.aspx.cs">
+      <DependentUpon>frmSalidaCuadroServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSalidaCuadroServicio.aspx.designer.cs">
+      <DependentUpon>frmSalidaCuadroServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSalidaCuadroServicioTotal.aspx.cs">
+      <DependentUpon>frmSalidaCuadroServicioTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSalidaCuadroServicioTotal.aspx.designer.cs">
+      <DependentUpon>frmSalidaCuadroServicioTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSalidaFacturacion.aspx.cs">
+      <DependentUpon>frmSalidaFacturacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSalidaFacturacion.aspx.designer.cs">
+      <DependentUpon>frmSalidaFacturacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSalidaPresupuesto.aspx.cs">
+      <DependentUpon>frmSalidaPresupuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSalidaPresupuesto.aspx.designer.cs">
+      <DependentUpon>frmSalidaPresupuesto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSalidaPresupuestoTotal.aspx.cs">
+      <DependentUpon>frmSalidaPresupuestoTotal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSalidaPresupuestoTotal.aspx.designer.cs">
+      <DependentUpon>frmSalidaPresupuestoTotal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSalir.aspx.cs">
+      <DependentUpon>frmSalir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSalir.aspx.designer.cs">
+      <DependentUpon>frmSalir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmServidores_form.aspx.cs">
+      <DependentUpon>frmServidores_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmServidores_form.aspx.designer.cs">
+      <DependentUpon>frmServidores_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmServidores.aspx.cs">
+      <DependentUpon>frmServidores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmServidores.aspx.designer.cs">
+      <DependentUpon>frmServidores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmValorProductoDataCenter.aspx.cs">
+      <DependentUpon>frmValorProductoDataCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmValorProductoDataCenter.aspx.designer.cs">
+      <DependentUpon>frmValorProductoDataCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmVentasPYG.aspx.cs">
+      <DependentUpon>frmVentasPYG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forms\frmVentasPYG.aspx.designer.cs">
+      <DependentUpon>frmVentasPYG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Light.master.cs">
+      <DependentUpon>Light.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Light.master.designer.cs">
+      <DependentUpon>Light.master</DependentUpon>
+    </Compile>
+    <Compile Include="Main.master.cs">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.master.designer.cs">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Root.master.cs">
+      <DependentUpon>Root.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root.master.designer.cs">
+      <DependentUpon>Root.master</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\BarraHerramientas.ascx.cs">
+      <DependentUpon>BarraHerramientas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\BarraHerramientas.ascx.designer.cs">
+      <DependentUpon>BarraHerramientas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\VentanaEliminar.ascx.cs">
+      <DependentUpon>VentanaEliminar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\VentanaEliminar.ascx.designer.cs">
+      <DependentUpon>VentanaEliminar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\VentanaValidaciones.ascx.cs">
+      <DependentUpon>VentanaValidaciones.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\VentanaValidaciones.ascx.designer.cs">
+      <DependentUpon>VentanaValidaciones.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilidades.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Medeski.BusinessLogic\Medeski.BusinessLogic.csproj">
+      <Project>{61ad4400-2cc6-41fb-a319-8a6e5bbae540}</Project>
+      <Name>Medeski.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Medeski.DataModel\Medeski.DataModel.csproj">
+      <Project>{2fb41104-fefc-43b7-95fd-a27ddbe55418}</Project>
+      <Name>Medeski.DataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52635</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54663/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
