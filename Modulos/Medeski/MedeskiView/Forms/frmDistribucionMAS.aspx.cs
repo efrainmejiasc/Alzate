@@ -130,6 +130,7 @@ namespace MedeskiView.Forms
             {
 
                 grid.UpdateEdit();
+
                 IList<GE_TDISTRIBUCIONMASPROCESOS> iList = (IList<GE_TDISTRIBUCIONMASPROCESOS>)grid.DataSource;
                 Char delimiter = ';';
                 string[] strUsuario = null;

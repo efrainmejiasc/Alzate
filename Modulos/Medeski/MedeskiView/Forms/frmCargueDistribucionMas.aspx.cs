@@ -159,5 +159,13 @@ namespace MedeskiView.Forms
 
         }
 
+        public string GetSumatoriaMas()
+        {
+            if (HttpContext.Current.Session["SumatoriaMas"] != null)
+                return Convert.ToDecimal(HttpContext.Current.Session["SumatoriaMas"]).ToString("N3");
+            else
+                return "0.00";
+        }
+
     }
 }

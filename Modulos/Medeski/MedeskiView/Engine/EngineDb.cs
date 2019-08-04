@@ -121,6 +121,49 @@ namespace MedeskiView.Engine
             return resultado;
         }
 
+        public bool InsertDistribucionMas(DataTable dt)
+        {
+            bool resultado = false;
+            using (SqlConnection Cnx = new SqlConnection(Conexion))
+            {
+                SqlCommand command = new SqlCommand("Sp_CargueDistribucionMas", Cnx);
+                command.CommandType = CommandType.StoredProcedure;
+                foreach (DataRow m in dt.Rows)
+                {
+                    if (m[9].ToString() == string.Empty)
+                    {
+                        try
+                        {
+                            this.periodo = 1;
+                            this.producto = Convert.ToInt32(m[1]);
+                            this.valor = Convert.ToDecimal(m[2]);
+                            this.usuario = m[5].ToString();
+                            this.fecha = Convert.ToDateTime(m[6]);
+
+                            Cnx.Open();
+                            command.Parameters.Clear();
+                            command.Parameters.AddWithValue("@dmas_periodo", this.periodo);
+                            command.Parameters.AddWithValue("@dmas_producto", this.producto);
+                            command.Parameters.AddWithValue("@dmas_valor", this.valor);
+                            command.Parameters.AddWithValue("@dmas_usuario", this.usuario);
+                            command.Parameters.AddWithValue("@dmas_fecha", this.fecha);
+                            command.ExecuteNonQuery();
+                            resultado = true;
+                            Cnx.Close();
+                        }
+                        catch (Exception ex)
+                        {
+                            Cnx.Close();
+                        }
+                    }
+                }
+
+
+            }
+            return resultado;
+        }
+
+
 
         public string  InsertarEnTasasSqlBulk(DataTable dt , string tableName)
         {

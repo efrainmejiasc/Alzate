@@ -252,7 +252,7 @@ namespace MedeskiView.Engine
                                 if (r[1] != null && r[0] != null)
                                     sumatoria = sumatoria + cantidad;
 
-                                dt2.Rows.Add(productoDirecto, codigoProducto, cantidad.ToString("N3"), 0, observacion);
+                                dt2.Rows.Add(productoDirecto, codigoProducto, cantidad.ToString("N3"), 0, observacion,usuario,DateTime.Now);
                             }
                             n++;
                         }
@@ -276,6 +276,8 @@ namespace MedeskiView.Engine
             dt.Columns.Add("Cantidad");//2
             dt.Columns.Add("Porcentaje");//3
             dt.Columns.Add("Observacion");//4
+            dt.Columns.Add("Usuario");//5
+            dt.Columns.Add("Fecha");//6
             return dt;
         }
 

@@ -114,26 +114,7 @@
               <h6>Cargue Distribucion Personas<br /></h6>
           </div>
           <div id="ContenedorFormulario" class="">
-               <!-- <div class="form-row">
-                <div class="form-group col-md-6">
-                      <select ID="cmbCriterioDistribucion" Class="form-control" >
-                          <option value="" disabled selected>Seleccionar Criterio de Distribución</option>
-                          <option value="0">Productos</option>
-                          <option value="1">Servidores</option>
-                      </select>
-                  </div>
-                  <div class="form-group col-md-6">
-                      <select ID="cmbAreas" Class="form-control">
-                          <option value="" disabled selected>Seleccionar Area</option>
-                          <option value="0">CDM</option>
-                          <option value="1">DESARROLLO</option>
-                          <option value="2">GERENCIA TECNICA</option>
-                          <option value="3">INFRAESTRUCTURA</option>
-                          <option value="4">JEFATURA</option>
-                          <option value="5">OPERACIONES</option>
-                      </select>
-                  </div>
-              </div> -->
+        
               <div class="form-row">
                   <div class="form-group col-md-12">
                       <dx:ASPxUploadControl ID="UploadControl" runat="server" ClientInstanceName="UploadControl" Width="100%"
@@ -181,11 +162,22 @@
 
                       <dx:GridViewDataColumn Caption="Codigo Producto" FieldName="CodigoProducto" VisibleIndex="1" Visible="true" HeaderStyle-HorizontalAlign="Left" > </dx:GridViewDataColumn>
 
-                      <dx:GridViewDataColumn Caption="Cantidad" FieldName ="Cantidad" VisibleIndex="2" Visible="true" HeaderStyle-HorizontalAlign="Left"> </dx:GridViewDataColumn>
+                      <dx:GridViewDataColumn Caption="Cantidad" FieldName ="Cantidad" VisibleIndex="2" Visible="true" HeaderStyle-HorizontalAlign="Left"> 
+                          <FooterTemplate>
+                        Total = 
+                        <dx:ASPxLabel ID="ASPxLabel1" runat="server" ClientInstanceName="labelSum" Text='<%# GetSumatoriaMas() %>'>
+                        </dx:ASPxLabel>
+                    </FooterTemplate>
+                      </dx:GridViewDataColumn>
 
                       <dx:GridViewDataColumn Caption="Porcentaje" FieldName ="Porcentaje" VisibleIndex="3" Visible="true" HeaderStyle-HorizontalAlign="Left"> </dx:GridViewDataColumn>
   
                       <dx:GridViewDataColumn Caption="Observacion" FieldName ="Observacion" VisibleIndex="4" Visible="true" HeaderStyle-HorizontalAlign="Left"> </dx:GridViewDataColumn>
+
+                       <dx:GridViewDataColumn Caption="Usuario" FieldName ="Usuario"  Visible="false" HeaderStyle-HorizontalAlign="Left"> </dx:GridViewDataColumn>
+  
+                      <dx:GridViewDataColumn Caption="Fecha" FieldName ="Fecha"  Visible="false" HeaderStyle-HorizontalAlign="Left"> </dx:GridViewDataColumn>
+
 
                   </Columns>
               </dx:ASPxGridView>
