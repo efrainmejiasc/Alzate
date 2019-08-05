@@ -147,7 +147,7 @@
                     <Settings AutoFilterCondition="Contains" />
                 </dx:GridViewDataColumn>
                 <dx:GridViewDataColumn FieldName="dto_generic_empresa" Caption="Empresa" VisibleIndex="2">
-                    <Settings AutoFilterCondition="Contains" />
+                    <Settings AutoFilterCondition="BeginsWith" />
                 </dx:GridViewDataColumn>
                 <dx:GridViewDataColumn FieldName="dto_generic_sede" Caption="Sede" VisibleIndex="3">
                     <Settings AutoFilterCondition="Contains" />

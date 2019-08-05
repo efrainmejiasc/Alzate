@@ -130,7 +130,7 @@ namespace MedeskiView.Engine
                 command.CommandType = CommandType.StoredProcedure;
                 foreach (DataRow m in dt.Rows)
                 {
-                    if (m[9].ToString() == string.Empty)
+                    if (m[4].ToString() == string.Empty)
                     {
                         try
                         {

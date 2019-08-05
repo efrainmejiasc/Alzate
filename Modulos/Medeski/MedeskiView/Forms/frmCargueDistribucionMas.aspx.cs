@@ -146,7 +146,7 @@ namespace MedeskiView.Forms
                 dt = (DataTable)Session["DataCargue"];
                 EngineProyect Funcion = new EngineProyect();
 
-                bool resultado = Metodo.InsertDistribucionPersona(dt);
+                bool resultado = Metodo.InsertDistribucionMas(dt);
                 if (resultado)
                     VentanaValidaciones1.mostrarRegistroExitoso();
                 else
