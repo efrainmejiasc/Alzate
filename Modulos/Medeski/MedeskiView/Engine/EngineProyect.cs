@@ -117,7 +117,8 @@ namespace MedeskiView.Engine
         public DataTable PorcentajeCantidadesMas(DataTable dt,decimal sumatoria)
         {
             decimal porcentaje = 0;
-            foreach(DataRow r in dt.Rows)
+            HttpContext.Current.Session["SumatoriaMas"] = sumatoria;
+            foreach (DataRow r in dt.Rows)
             {
                 porcentaje = 0;
                 if (r["Cantidad"] != null && r["Observacion"].ToString () == string.Empty)

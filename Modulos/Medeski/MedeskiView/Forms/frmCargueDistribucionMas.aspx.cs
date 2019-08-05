@@ -146,7 +146,7 @@ namespace MedeskiView.Forms
                 dt = (DataTable)Session["DataCargue"];
                 EngineProyect Funcion = new EngineProyect();
 
-                bool resultado = Metodo.InsertDistribucionPersona(dt);
+                bool resultado = Metodo.InsertDistribucionMas(dt);
                 if (resultado)
                     VentanaValidaciones1.mostrarRegistroExitoso();
                 else
@@ -157,6 +157,14 @@ namespace MedeskiView.Forms
                 VentanaValidaciones1.mostrarMensajePersonalizado("Error", "Se presento errores al guardar");
             }
 
+        }
+
+        public string GetSumatoriaMas()
+        {
+            if (HttpContext.Current.Session["SumatoriaMas"] != null)
+                return Convert.ToDecimal(HttpContext.Current.Session["SumatoriaMas"]).ToString("N3");
+            else
+                return "0.00";
         }
 
     }

@@ -257,6 +257,8 @@ footer{
   position:relative;
   display:block;  
   overflow: auto;
+    top: -157px;
+    left: -100px;
 }
 
 /*Estilo titulos paginas*/ .titulo1 {
